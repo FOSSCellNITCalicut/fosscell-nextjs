@@ -90,7 +90,11 @@ return (
                 {
                     newsCards.map((news) =>
                     (
-                        <div className={styles['event-card']}>
+                      <Link
+                      href={`/events/${news.id}`}
+                      passHref
+                      className={styles['event-card']}
+                      >
                             <p className={styles['event-card-date']}>
                                 {news.date}
                             </p>
@@ -100,7 +104,7 @@ return (
                             <p className={styles['event-card-desc']}>
                                 {news.description}
                             </p>
-                        </div>
+                      </Link>
                     ))
                 }
             </div>

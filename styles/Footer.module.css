@@ -72,6 +72,11 @@
     width: 25%;
 }
 
+.footer-logo:active {
+    
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* .nav-logo-mobile {
     composes : nav-logo;
     justify-content: space-between;
@@ -88,6 +93,10 @@
     color : var(--light-grey);
 }
 
+.nav-link:active {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .nav-link-active {
     composes : nav-link;
     color : var(--orange);
@@ -101,6 +110,10 @@
     /* border : 1px solid white; */
     padding-left : 0.4rem;
     margin-top: 0.5rem;
+}
+
+.logo:active {
+    -webkit-tap-highlight-color: transparent;
 }
 
 

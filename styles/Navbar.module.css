@@ -33,6 +33,11 @@
     width: 100%;
 }
 
+.nav-logo-mobile:active {
+    
+    -webkit-tap-highlight-color: transparent;
+}
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -49,9 +54,14 @@
     color : var(--light-grey);
 }
 
+
 .nav-link-active {
     composes : nav-link;
     color : var(--orange);
+}
+
+.nav-link:active {
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -63,6 +73,10 @@
 .hamburger {
     margin-left : 8rem;
     cursor: pointer;
+}
+
+.hamburger:active {
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-menu-mobile {
@@ -110,6 +124,10 @@
 .nav-link-mobile-active {
     composes : nav-link-mobile;
     color: var(--orange);
+}
+
+.nav-link-mobile:active {
+    -webkit-tap-highlight-color: transparent;
 }
 
 

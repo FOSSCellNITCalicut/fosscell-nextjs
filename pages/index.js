@@ -29,7 +29,7 @@ export default function Home() {
             >
                   <Image
                       src={"/images/HeroImage.svg"}
-                      alt={"FOSSCell logo"}
+                      alt={"Hero Image"}
                       layout="intrinsic"
                       width={587}
                       height={460}
