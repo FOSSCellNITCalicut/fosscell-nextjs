@@ -3,18 +3,34 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #27282c;
+    background-color: var(--grey);
     width: 100%;
-    height :  8rem;
-    padding: 3rem 3rem;
+    height :  8.3rem;
+    padding: 3rem 2.5rem;
+    margin : 0;
+}
+
+.navbar-longer {
+    composes : navbar;
+    flex-direction: column;
+    height : 20rem;
+    padding-top : 1.5rem;
+    justify-content: space-between;
 }
 
 .nav-logo {
     display: flex;
     /* width: 20%;
     height: 6rem; */
-    color : red;
+    flex-direction: row;
     /* border : 1px solid white; */
+}
+
+.nav-logo-mobile {
+    composes : nav-logo;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .nav-menu {
@@ -29,7 +45,87 @@
     font-size : 1.6rem;
 }
 
+.nav-link:hover {
+    font-size : 1.7rem;
+}
+
 .nav-link-active {
     composes : nav-link;
-    color : #fa8860;
+    color : var(--orange);
 }
+
+
+
+.hidden {
+    display: none;
+}
+
+.hamburger {
+    margin-left : 8rem;
+    cursor: pointer;
+}
+
+.nav-menu-mobile {
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    top : 8rem;
+    position: fixed;
+    width: 100%;
+    /* padding-top : 1rem; */
+    padding-left : 1rem;
+    padding-bottom: 1.5rem;
+    opacity: 1;
+    height: 12rem;
+    /* border-bottom: 0.3rem solid white; */
+    /* box-shadow: 0rem 0rem 2rem black; */
+    transition:  height 0.1s linear;
+}
+
+.nav-menu-mobile::before {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Offset for the shadow */
+  left: 0;
+  width: 100%;
+  height: 0.3rem; /* Height of the shadow */
+  background-color: rgba(0, 0, 0, 0.2); /* Shadow color and opacity */
+  box-shadow: 0rem 0rem 0.8rem black;
+}
+
+
+.nav-menu-mobile-hidden {
+    opacity: 0;
+    height : 0;
+    padding : 0;
+    border : none;
+}
+
+.nav-link-mobile {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.nav-link-mobile-active {
+    composes : nav-link-mobile;
+    color: var(--orange);
+}
+
+
+@media (max-width : 800px) {
+    .navbar {
+        padding-left : 0.8rem;
+        /* padding-right : 1rem; */
+    }
+}
+
+@media (max-width : 500px) {
+    .navbar {
+        padding-left : 0.6rem;
+        padding-right : 1rem;
+    }
+}
+
+
+

@@ -1,3 +1,7 @@
+.home {
+  min-height: 100vh;
+  background-color: white;
+}
 .main {
   display: flex;
   flex-direction: column;
