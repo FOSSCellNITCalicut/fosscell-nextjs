@@ -5,10 +5,10 @@ import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Index() {
   return (
     <div className={styles['home']}>
-      HomePage
-    </div>
+      home
+    </div> 
   )
 }
