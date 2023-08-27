@@ -1,0 +1,120 @@
+.event-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding : 2rem 1rem 2rem 1rem;
+    height: 32rem;
+    justify-content: space-between;
+}
+
+.event-heading {
+    color : var(--orange);
+    padding-right : 1rem;
+    font-size : 2.5rem;
+}
+
+.event-list-wrapper {
+    display: flex;
+    justify-content: space-around;
+    color : white;
+    align-items: center;
+}
+
+.event-list {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    color : white;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: flex-start;
+    /* margin-left : 1rem; */
+    color : black;
+    width : 32%;
+    height: 20rem;
+    border-radius: 1rem;
+    padding : 1rem 0.5rem;
+}
+
+.event-card-date {
+   margin-bottom: 0.5rem; 
+}
+
+.event-card-heading {
+   font-size : 1.5rem; 
+   margin-bottom: 0.5rem;
+}
+
+/* .event-card-desc {
+    text-align: justify;
+    overflow:auto;
+    width: 100%;
+    word-wrap:break-word;
+    white-space:break-spaces;
+    overflow-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+.event-card-desc {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+  }
+  
+
+.event-read-more {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size : 1.2rem;
+}
+
+.next-prev-button {
+    cursor: pointer;
+}
+
+.next-prev-button:hover {
+    color : var(--light-grey);
+}
+
+
+@media (max-width : 800px) {
+    .event-card {
+        width : 48%;
+    }
+    .event-list {
+        width : 90%;
+    }
+}
+
+@media (max-width : 600px) {
+    .event-card {
+        width : 100%;
+    }
+    .event-heading {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width : 600px) {
+    .event-list {
+        width : 85%;
+    }
+    .event-container {
+        padding-left : 0.5rem;
+        padding-right : 0.5rem;
+    }
+    .event-heading {
+        font-size : 2.2rem;
+    }
+}

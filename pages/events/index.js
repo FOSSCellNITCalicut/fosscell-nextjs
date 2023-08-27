@@ -1,6 +1,9 @@
-
+import styles from '@/styles/Events.module.css'
 export default function Events() {
+
     return (
-        <p>Events</p>
+        <div className={styles['event-container']}>
+            Events
+        </div>  
     )
-}
+    }
