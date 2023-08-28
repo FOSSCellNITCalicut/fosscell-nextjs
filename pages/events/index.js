@@ -39,7 +39,6 @@ function ParseDate({date}) {
 }
 
 export default function Events({newsData}) {
-    console.log(newsData);
     return (
         <div className={styles['event-list']}>
                 {
