@@ -18,7 +18,7 @@ import Madhav from "@/public/images/Team/Madhav_Prabhu.jpg"
 import Afthab from "@/public/images/Team/Mohamed_Afthab.jpg"
 import Jaseem from "@/public/images/Team/Muhammed Jaseem.jpg"
 import Neena from "@/public/images/Team/Neena_MS.jpg"
-import Piyush from "@/public/images/Team/Piyush Soni.jpeg"
+import Piyush from "@/public/images/Team/Piyush Soni.jpg"
 import Pranav from "@/public/images/Team/Pranav Prashant.jpeg"
 
 import PranavNair from "@/public/images/Team/Pranav R Nair.jpg"
