@@ -12,7 +12,7 @@ import {IoMdClose} from "react-icons/io"
 export default function Navbar() {
     const {pathname} = useRouter();
     const [navVisibility, setNavVisibility] = useState(false);
-    const [mobile, setMoblie] = useState(false);
+    const [mobile, setMoblie] = useState(true);
 
     useEffect(() => {
 
