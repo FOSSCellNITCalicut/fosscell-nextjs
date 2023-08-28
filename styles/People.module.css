@@ -1,0 +1,162 @@
+.people-container {
+    min-height : 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 4rem;
+    background-color: white;
+    color : black;
+}
+
+.people-nav {
+    width : 40%;    
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: var(--orange); */
+    border : none;
+    margin-bottom: 2rem;
+}
+
+.nav-button {
+    height : 100%;
+    width : 50%;
+    color : var(--orange);
+    background-color: var(--grey);
+    border-radius: 3rem 0rem 0rem 3rem;
+    border : none;
+    font-size : 1.5rem;
+    padding : 0.5rem;
+    cursor: pointer;
+    border : 1px solid var(--grey);
+    transition: background-color 0.2s linear;
+}
+
+.nav-button:active {
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-active {
+    background-color: white;
+}
+
+
+
+.nav-button:nth-last-child(1) {
+    border-radius : 0rem 3rem 3rem 0rem;
+}
+
+
+.people-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.member-card {
+    width : 250px;
+    height : 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.member-card{
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+  }
+
+
+.image-wrapper {
+    background-image: url('../public/images/underpics.jpg');
+    background-size: cover;
+    padding: 4%;
+    align-items: center;
+    height: 170px;
+    width: 170px;
+    margin-bottom: 1rem;
+}
+
+
+  .avatar{
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+.member-name {
+    text-align: center;
+    width: 100%;
+    font-size : 1.2rem;
+}
+
+
+@media (max-width : 1300px) {
+    .people-container {
+        padding : 2rem;
+    }
+    .member-card {
+        margin-left : 3%;
+        margin-right : 3%;
+    }
+}
+
+@media (max-width : 1100px) {
+    .people-container {
+        padding : 2rem;
+    }
+    .member-card {
+        margin-left : 2%;
+        margin-right : 2%;
+        width: 27%;
+    }
+}
+
+
+@media (max-width : 900px) {
+    .people-nav {
+        width: 55%;
+    }
+}
+
+@media (max-width : 800px) {
+    .people-container {
+        padding : 2rem;
+    }
+
+    .people-nav {
+        width : 70%;
+    }
+    .member-card {
+        margin-left : 2%;
+        margin-right : 2%;
+        width: 42%;
+    }
+}
+
+
+
+
+@media (max-width : 550px) {
+    .member-card {
+        width: 95%;
+    }
+    .people-nav {
+        width : 95%;
+    }
+}

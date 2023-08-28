@@ -2,46 +2,30 @@ import styles from '@/styles/HomeEvents.module.css'
 import { useState, useEffect } from 'react';
 import {AiOutlineDoubleRight, AiOutlineDoubleLeft } from 'react-icons/ai'
 import Link from 'next/link'
-export default function HomeEvents() {
+import parse from 'html-react-parser'
 
-const newsData = [
-  {
-    id : 1, 
-    date : "April 1, 2100",
-    title : "news1", 
-    description : "descdescdescdescdescdescdescdescdescdesc"
-  },
-  {
-    id : 2, 
-    date : "April 1, 2100",
-    title : "news2", 
-    description : "descdescdescdescdescdescdescdescdescdesc"
-  },
-  {
-    id : 3, 
-    date : "April 1, 2100",
-    title : "news3", 
-    description : "descdescdescdescdescdescdescdescdescdesc"
-  },
-  {
-    id : 4, 
-    date : "April 1, 2100",
-    title : "News 4's name is kinda big than usual headings", 
-    description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae dui sodales, vehicula dui at, aliquam nibh. Nunc pellentesque vulputate elementum. Maecenas et ultrices nisl, a mattis metus. Aliquam tortor ex, sodales vel tincidunt eu, ullamcorper at nibh. Sed nunc urna, lacinia a efficitur at, pretium nec lorem. Nam faucibus risus ac mauris viverra, eu ullamcorper tortor elementum. Praesent libero elit, porttitor et tempus in, dapibus eu sapien. Pellentesque tincidunt vitae velit in ultrices. Duis vulputate rhoncus imperdiet. Nullam fringilla neque libero, ut mollis nulla placerat in. Ut placerat odio malesuada dui gravida consequat a eget ex. Nunc nunc libero, porttitor eu tellus ut, sodales tempor dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec fringilla leo id diam volutpat, at pharetra nisi scelerisque. Proin quis turpis consectetur, molestie turpis vitae, convallis dui"
-  },
-  {
-    id : 5, 
-    date : "April 1, 2100",
-    title : "news5", 
-    description : "descdescdescdescdescdescdescdescdescdesc"
-  },
-  {
-    id : 6, 
-    date : "April 1, 2100",
-    title : "news6", 
-    description : "descdescdescdescdescdescdescdescdescdesc"
-  }
-]
+
+function ParseDate({date}) {
+    let formattedDate = new Date(date).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: '2-digit',
+    // hour: "2-digit",
+    // minute: "2-digit",
+    // hour12: false
+    })
+    return (
+    <p className={styles['event-card-date']}>
+        {formattedDate}
+    </p>
+    )
+}
+
+
+
+export default function HomeEvents({newsData}) {
+
+
 const [cardsPerPage, setCardPerPage] = useState(1);
 const [currentPage, setCurrentPage] = useState(0);
 let totalPages = 6 / cardsPerPage;
@@ -88,24 +72,28 @@ return (
             />
             <div className={styles['event-list']}>
                 {
-                    newsCards.map((news) =>
-                    (
+                    newsCards.map((news) => {
+                      let ret = null
+                      if (news) {
+                        ret = (
                       <Link
                       href={`/events/${news.id}`}
                       passHref
                       className={styles['event-card']}
                       >
-                            <p className={styles['event-card-date']}>
-                                {news.date}
-                            </p>
+                            <ParseDate date={news.date} />
                             <h3 className={styles['event-card-heading']}>
-                                {news.title}
+                                {parse(news.title)}
                             </h3>
-                            <p className={styles['event-card-desc']}>
-                                {news.description}
-                            </p>
+                            <div className={styles['event-card-desc']}>
+                              {parse(news.description)}
+                            </div>
                       </Link>
-                    ))
+                        )
+                      }
+                      return ret;
+                    })
+
                 }
             </div>
             <AiOutlineDoubleRight

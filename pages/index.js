@@ -4,12 +4,31 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useState, useEffect } from 'react'
 import HomeEvents from '@/components/HomeEvents'
+import axios from 'axios'
 
 // const inter = Inter({ subsets: ['latin'] });
 
-export default function Home() {
 
+export async function getServerSideProps() {
+  const ret = await axios.get(`https://public-api.wordpress.com/rest/v1.1/sites/${process.env.SITE}/posts/`);
+  const data = await ret.data;
+  let newsData = await data.posts.slice(0, 6);
+  newsData =  await newsData.map((news) => {
+    return {
+      id : news.ID,
+      date : news.date,
+      title : news.title,
+      description : news.content
+    }
+  })
+  return {
+    props : {
+      newsData,
+    }
+  }
+}
 
+export default function Home({newsData}) {
   return (
     <div className={styles['home']}>
       <div className={styles['intro-container']}>
@@ -37,7 +56,7 @@ export default function Home() {
                   />
           </div>
       </div>
-      <HomeEvents />
+      <HomeEvents newsData={newsData}/>
     </div> 
   )
 }

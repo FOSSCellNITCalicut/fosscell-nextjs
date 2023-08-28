@@ -9,6 +9,7 @@
     border-top: 0.1rem solid var(--light-grey);
     padding-left : 2rem;
     padding-right : 11rem;
+    color : white;
 }
 
 .footer-social-contact-wrapper {
