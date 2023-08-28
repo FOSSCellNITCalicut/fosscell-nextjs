@@ -77,6 +77,7 @@ return (
                       if (news) {
                         ret = (
                       <Link
+                      key={news.id}
                       href={`/events/${news.id}`}
                       passHref
                       className={styles['event-card']}

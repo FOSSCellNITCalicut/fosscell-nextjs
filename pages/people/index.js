@@ -202,7 +202,7 @@ export default function People() {
             {members && (
                member.map((member) => {
                 return (
-                    <div className={styles['member-card']}>
+                    <div key={member.id} className={styles['member-card']}>
                         <div className={styles['image-wrapper']}>
                             <Image
                             className={styles['avatar']}
@@ -223,7 +223,7 @@ export default function People() {
             {!members && (
                alumni.map((member) => {
                 return (
-                    <div className={styles['member-card']}>
+                    <div key={member.id} className={styles['member-card']}>
                         <div className={styles['image-wrapper']}>
                             <Image
                             className={styles['avatar']}
