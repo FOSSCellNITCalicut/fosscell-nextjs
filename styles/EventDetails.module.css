@@ -76,11 +76,11 @@
 
 @media (max-width : 500px) {
     .event-container {
-        padding-left : 1.5rem;
-        padding-right : 1.5rem;
+        padding-left : 1rem;
+        padding-right : 1rem;
     }
     .event-card-heading {
-        font-size : 2.8rem;
+        font-size : 2.5rem;
         text-align: start;
     }
     .event-card-desc {
