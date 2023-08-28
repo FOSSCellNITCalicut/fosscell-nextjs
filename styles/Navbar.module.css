@@ -81,6 +81,7 @@
 }
 
 .nav-menu-mobile {
+    z-index: 60;
     background-color: var(--grey);
     display: flex;
     flex-direction: column;

@@ -64,7 +64,6 @@ export default function Navbar() {
                      <Link
                         className={pathname === '/' ? styles['nav-link-active'] : styles['nav-link']}
                         href='/'
-                        
                      >
                         Home
                      </Link>
@@ -118,25 +117,28 @@ export default function Navbar() {
                  <Link
                     className={pathname === '/' ? styles['nav-link-mobile-active'] : styles['nav-link-mobile']}
                     href='/'
-                    
+                     onClick={toggleNavVisibility}
                  >
                     Home
                  </Link>
                  <Link
                     className={pathname === '/events' ? styles['nav-link-mobile-active'] : styles['nav-link-mobile']}
                     href='/events'
+                     onClick={toggleNavVisibility}
                  >
                     Events
                  </Link>
                  <Link
                     className={pathname === '/people' ? styles['nav-link-mobile-active'] : styles['nav-link-mobile']}
                     href='/people'
+                     onClick={toggleNavVisibility}
                  >
                     Our People
                  </Link>
                  <Link
                     className={pathname === '/whoweare' ? styles['nav-link-mobile-active'] : styles['nav-link-mobile']}
                     href='/whoweare'
+                     onClick={toggleNavVisibility}
                  >
                     Who We Are
                  </Link>

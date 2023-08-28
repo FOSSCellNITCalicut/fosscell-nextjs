@@ -9,26 +9,34 @@ import axios from 'axios'
 // const inter = Inter({ subsets: ['latin'] });
 
 
+// export async function getServerSideProps() {
+//   const ret = await axios.get(`https://public-api.wordpress.com/rest/v1.1/sites/${process.env.SITE}/posts/`);
+//   const data = await ret.data;
+//   let newsData = await data.posts.slice(0, 6);
+//   newsData =  await newsData.map((news) => {
+//     return {
+//       id : news.ID,
+//       date : news.date,
+//       title : news.title,
+//       description : news.content
+//     }
+//   })
+//   return {
+//     props : {
+//       newsData,
+//     }
+//   }
+// }
+
 export async function getServerSideProps() {
-  const ret = await axios.get(`https://public-api.wordpress.com/rest/v1.1/sites/${process.env.SITE}/posts/`);
-  const data = await ret.data;
-  let newsData = await data.posts.slice(0, 6);
-  newsData =  await newsData.map((news) => {
-    return {
-      id : news.ID,
-      date : news.date,
-      title : news.title,
-      description : news.content
-    }
-  })
   return {
-    props : {
-      newsData,
+    props: {
+      site : process.env.SITE
     }
   }
 }
 
-export default function Home({newsData}) {
+export default function Home({site}) {
   return (
     <div className={styles['home']}>
       <div className={styles['intro-container']}>
@@ -56,7 +64,7 @@ export default function Home({newsData}) {
                   />
           </div>
       </div>
-      <HomeEvents newsData={newsData}/>
+      <HomeEvents site={site}/>
     </div> 
   )
 }
