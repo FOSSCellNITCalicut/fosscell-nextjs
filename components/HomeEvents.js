@@ -35,7 +35,7 @@ let totalPages = 6 / cardsPerPage;
 
 useEffect(() => {
     const handleCardsPerPage = () => {
-        setCardPerPage(window.innerWidth > 800 ? 3 : window.innerWidth > 600 ? 2 : 1);
+        setCardPerPage(window.innerWidth > 900 ? 3 : window.innerWidth > 700 ? 2 : 1);
     }
     handleCardsPerPage();
     async function loadData() {
