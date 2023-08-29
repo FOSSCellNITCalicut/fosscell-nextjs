@@ -27,7 +27,7 @@
     color : black;
     display: flex;
     flex-direction: column;
-    padding : 2rem 1rem;
+    padding : 2rem 1rem 2.5rem 1rem;
     align-items: center;
     position: relative;
 }
@@ -42,11 +42,11 @@
     color : white;
     width : 100%;
     height: 9rem;
-    border-radius: 1rem;
-    padding : 1rem 0.5rem;
+    border-radius: 0.5rem;
+    padding : 1rem 1rem;
     padding-left : 0.8rem;
     border : 1px solid black;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
 }
 
 .event-card:active {
@@ -115,8 +115,8 @@
     .event-list {
         padding-top : 0.4rem;
         /* padding-bottom : 0.3rem; */
-        padding-left : 0.3rem;
-        padding-right : 0.3rem;
+        padding-left : 0.7rem;
+        padding-right : 0.7rem;
     }
     .event-card-heading {
         /* font-size : 1.2rem; */
