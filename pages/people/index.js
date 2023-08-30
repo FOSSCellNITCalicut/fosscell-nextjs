@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from '@/styles/People.module.css'
 
-import Aabid from "@/public/images/Team/Aabid Mohamed.jpg"
+// import Aabid from "@/public/images/Team/Aabid Mohamed.jpg"
 import Abin from "@/public/images/Team/Abin_Latheef.jpg"
 import Afraz from "@/public/images/Team/Afraz Ahmed.jpeg"
 import Alen from "@/public/images/Team/Alen_Antony.jpg"
@@ -29,6 +29,11 @@ import Sree from "@/public/images/Team/Sreevalsan.jpeg"
 import Vedasree from "@/public/images/Team/Vedasree Rodi.jpeg"
 import Vimal from "@/public/images/Team/Vimal Joseph.JPG"
 import Ameen from "@/public/images/Team/Mohammed Ameen.jpg"
+import Unnati from "@/public/images/Team/Unnati.jpg"
+import Nazim from "@/public/images/Team/Nazim Jabir.jpeg"
+import Chacko from "@/public/images/Team/Chacko James.jpeg"
+import Nithin from "@/public/images/Team/Nithin Manoj.jpeg"
+import Vysakh from "@/public/images/Team/Vysakh Premkumar.jpeg"
 
 import Image from 'next/image'
 
@@ -93,6 +98,18 @@ const alumni =[
     position:"Alumni",
     image:Vimal
 },
+{
+    id:11,
+    name : "Nazim Jabir",
+    position:"Alumni",
+    image:Nazim
+},
+{
+    id:12,
+    name: "Nithin Puthalath",
+    position:"Alumni",
+    image:Nithin
+}
 ]
 
 const member =[
@@ -107,6 +124,12 @@ const member =[
         name:"Madhav Prabhu C M",
         position:"Joint Secretary",
         image:Madhav
+    },
+    {
+        id:20,
+        name:"Vysakh Premkumar",
+        position:"Mentor",
+        image:Vysakh
     },
     {
         id:3,
@@ -152,15 +175,15 @@ const member =[
     },
     {
         id:10,
-        name:"Abid Mohamed",
-        position:"Member",
-        image:Aabid
-    },
-    {
-        id:11,
         name:"Alen Antony",
         position:"Member",
         image:Alen
+    },
+    {
+        id:11,
+        name:"Unnati",
+        position:"Member",
+        image:Unnati
     },
     {
         id:12,
@@ -203,6 +226,12 @@ const member =[
         name:"Vedasree Rodi",
         position:"Member",
         image:Vedasree
+    },
+    {
+        id: 19,
+        name:"Chacko James",
+        position:"Member",
+        image:Chacko
     }
 ]
 
@@ -249,7 +278,7 @@ export default function People() {
             {!members && (
                alumni.map((member) => {
                 return (
-                    <div key={member.id} className={styles['member-card']}>
+                    <div key={member.id} className={`${styles['member-card']} ${styles['alumni-card']}`}>
                         <div className={styles['image-wrapper']}>
                             <Image
                             className={styles['avatar']}
@@ -262,7 +291,7 @@ export default function People() {
                         />
                         </div>
                         <h2 className={styles['member-name']}>{member.name}</h2>
-                        <p className={styles['member-position']}>{member.position}</p>
+                        {/* <p className={styles['member-position']} >{member.position} </p> */}
                     </div>
                 )
                }) 

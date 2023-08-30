@@ -79,6 +79,10 @@
     height: 250px;
   }
 
+.alumni-card {
+    height : 220px;
+}
+
 
 .image-wrapper {
     background-image: url('../public/images/underpics.jpg');

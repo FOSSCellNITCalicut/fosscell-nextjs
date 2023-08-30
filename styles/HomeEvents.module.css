@@ -62,7 +62,7 @@
     height: 20rem;
     border-radius: 1rem;
     user-select: none;
-    padding : 1rem 0.5rem;
+    padding : 1rem 1.5rem;
 }
 
 .event-card:active {
@@ -96,6 +96,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
+    font-size : 1rem;
   }
   
 
@@ -159,5 +160,12 @@
     }
     .event-heading {
         font-size : 2.2rem;
+    }
+    .event-card {
+        /* padding-left : 1.2rem; */
+        /* padding-right : 1.2rem; */
+    }
+    .event-card-desc {
+        font-size : 0.9rem;
     }
 }
