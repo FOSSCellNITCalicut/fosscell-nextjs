@@ -23,7 +23,7 @@
     height : 100%;
     width : 50%;
     color : var(--orange);
-    background-color: var(--grey);
+    background-color: white;
     border-radius: 3rem 0rem 0rem 3rem;
     border : none;
     font-size : 1.5rem;
@@ -39,7 +39,7 @@
 }
 
 .nav-active {
-    background-color: white;
+    background-color: var(--grey);
 }
 
 
