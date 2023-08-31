@@ -1,7 +1,8 @@
 .container {
     display: flex;
     align-items: center;
-    background-color: white;
+    /* background-color: white; */
+    background: linear-gradient(to bottom, var(--grey) 20%, black 20%);
     padding-top : 3rem;
     padding-bottom : 3rem;
 }
@@ -12,14 +13,15 @@
     /* background-color: white;
     color: black; */
     background-color: var(--grey);
-    border : 2px solid var(--orange);
-    margin-left : 5rem;
-    margin-right : 5rem;
+    background-color: black;
+    /* border : 2px solid var(--orange); */
+    margin-left : 2rem;
+    margin-right : 2rem;
     width : 100%;
     padding : 4rem 2rem;
     align-items: center;
-    border-radius: 1rem;
-    box-shadow: 0.3rem 0.3rem 1rem var(--grey);
+    border-radius: 2rem;
+    /* box-shadow: 0.3rem 0.3rem 1rem var(--grey); */
 
 }
 
@@ -27,8 +29,8 @@
     width: 100%;
     font-size : 4rem;
     text-align: center;
-    margin-bottom: 1.5rem;
-    color : var(--orange)
+    margin-bottom: 1.8rem;
+    color : var(--orange);
 }
 .event-card-date {
     width: 100%;
@@ -42,8 +44,9 @@
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    line-height: 2.4rem;
+    line-height: 2.2rem;
     color : white;
+    text-align: justify;
 
 }
 
@@ -79,13 +82,16 @@
     .event-container {
         padding-left : 1rem;
         padding-right : 1rem;
+        margin-left : 0.5rem;
+        margin-right : 0.5rem;
+        /* border-radius: 1rem; */
     }
     .event-card-heading {
         font-size : 2.5rem;
-        text-align: start;
+        /* text-align: start; */
     }
     .event-card-desc {
         font-size: 0.8rem;
-        line-height: 2rem;
+        line-height: 1.5rem;
     }
 }

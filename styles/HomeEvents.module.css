@@ -97,6 +97,8 @@
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     font-size : 1rem;
+    text-align: justify;
+    line-height: 1.3rem;
   }
   
 

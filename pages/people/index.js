@@ -126,16 +126,16 @@ const member =[
         image:Madhav
     },
     {
-        id:20,
-        name:"Vysakh Premkumar",
-        position:"Mentor",
-        image:Vysakh
-    },
-    {
         id:3,
         name:"Mohammed Ameen",
         position:"Treasurer",
         image:Ameen
+    },
+    {
+        id:20,
+        name:"Vysakh Premkumar",
+        position:"Mentor",
+        image:Vysakh
     },
     {
         id:4,
@@ -187,7 +187,7 @@ const member =[
     },
     {
         id:12,
-        name:"Bhukya CHtan Ram",
+        name:"Bhukya Chetan Ram",
         position:"Member",
         image:Bhukya
     },

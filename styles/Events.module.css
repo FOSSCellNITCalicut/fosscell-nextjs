@@ -27,7 +27,7 @@
     color : black;
     display: flex;
     flex-direction: column;
-    padding : 2rem 1rem 2.5rem 1rem;
+    padding : 0.8rem 1rem 2.5rem 1rem;
     align-items: center;
     position: relative;
 }
@@ -46,7 +46,7 @@
     padding : 1rem 1rem;
     padding-left : 0.8rem;
     border : 1px solid black;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
 }
 
 .event-card:active {
@@ -78,6 +78,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    text-align: justify;
   }
 
 
@@ -113,7 +114,7 @@
 
 @media (max-width : 600px) {
     .event-list {
-        padding-top : 0.4rem;
+        padding-top : 0.8rem;
         /* padding-bottom : 0.3rem; */
         padding-left : 0.7rem;
         padding-right : 0.7rem;
