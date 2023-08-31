@@ -28,7 +28,7 @@
 .event-card-heading {
     width: 100%;
     font-size : 4rem;
-    text-align: center;
+    text-align: start;
     margin-bottom: 1.8rem;
     color : var(--orange);
 }
@@ -88,7 +88,6 @@
     }
     .event-card-heading {
         font-size : 2.5rem;
-        /* text-align: start; */
     }
     .event-card-desc {
         font-size: 0.8rem;
