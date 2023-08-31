@@ -32,7 +32,7 @@
 }
 
 .event-heading {
-    color : var(--orange);
+    color : white;
     padding-right : 1rem;
     font-size : 2.5rem;
 }
@@ -54,15 +54,16 @@
 .event-card {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: black;
     justify-content: flex-start;
     /* margin-left : 1rem; */
-    color : black;
+    color : var(--orange);
     width : 32%;
     height: 20rem;
     border-radius: 1rem;
     user-select: none;
     padding : 1rem 1.5rem;
+    border : 0.2rem solid white;
 }
 
 .event-card:active {
@@ -71,6 +72,7 @@
 
 .event-card-date {
    margin-bottom: 0.5rem; 
+   color : var(--light-grey)
 }
 
 .event-card-heading {
@@ -99,7 +101,9 @@
     font-size : 1rem;
     text-align: justify;
     line-height: 1.3rem;
+    color : white;
   }
+
   
 
 .event-read-more {
