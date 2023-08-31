@@ -5,7 +5,7 @@ import styles from '@/styles/People.module.css'
 import Abin from "@/public/images/Team/Abin_Latheef.jpg"
 import Afraz from "@/public/images/Team/Afraz Ahmed.jpeg"
 import Alen from "@/public/images/Team/Alen_Antony.jpg"
-import Aravind from "@/public/images/Team/Aravind_I_M.png"
+import Aravind from "@/public/images/Team/Aravind I M.jpeg"
 import Arjun from "@/public/images/Team/Arjun_M_Murali.jpeg"
 import Bhukya from "@/public/images/Team/Bhukya Chetan Ram.jpg"
 import Cliford from "@/public/images/Team/Cliford.jpg"
