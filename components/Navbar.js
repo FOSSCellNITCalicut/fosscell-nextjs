@@ -51,8 +51,8 @@ export default function Navbar() {
                             src={"/images/Logo.svg"}
                             alt={"FOSSCell logo"}
                             layout="intrinsic"
-                            width={248}
-                            height={78}
+                            width={230}
+                            height={84}
                             objectFit="scale-down" 
                             priority={true}
                         />

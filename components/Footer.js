@@ -28,8 +28,8 @@ export default function Footer() {
                             src={"/images/logo.svg"}
                             alt={"FOSSCell logo"}
                             layout="intrinsic"
-                            width={248}
-                            height={78}
+                            width={230}
+                            height={84}
                             objectFit="scale-down" 
                         />
                  </Link>
