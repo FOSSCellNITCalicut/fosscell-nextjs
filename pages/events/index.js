@@ -33,12 +33,13 @@ export default function Events({site}) {
     const [loading, setLoading] = useState(true);
     const [newsData, setNewsData] = useState(null);
     const [pageNo, setPageNo] = useState(1);
+    const [totalPages, setTotalPages] = useState(1);
 
 useEffect(() => {
     async function loadData() {
-        const ret = await axios.get(`https://public-api.wordpress.com/rest/v1.1/sites/${site}/posts/?per_page=6&page=${pageNo}`);
-        let data = await ret.data;
-        data = await data.posts.slice(0, 6);
+        const ret = await axios.get(`https://public-api.wordpress.com/rest/v1.1/sites/${site}/posts/?number=6&page=${pageNo}`);
+        let response = await ret.data;
+        let data = await response.posts.slice(0, 6);
         data =  await data.map((news) => {
           return {
             id : news.ID,
@@ -49,14 +50,19 @@ useEffect(() => {
         })
       setLoading(false);
       setNewsData(data.length === 0 ? null : data);
+      setTotalPages(parseInt((response.found + 5)/6));
     }
     loadData();
 }, [pageNo])
 
+
+
 const nextPage = () => {
+  if (pageNo < totalPages) {
     setPageNo(pageNo + 1);
     setLoading(true);
     setNewsData(null);
+  }
 }
 
 const prevPage = () => {
@@ -106,8 +112,8 @@ const prevPage = () => {
                  )
             }
         <div className={styles['nav-bar']}>
-            <button className={styles['button']} onClick={prevPage}>prev</button>
-            <button className={styles['button']} onClick={nextPage}>next</button>
+            <button className={`${styles['button']} ${pageNo == 1 ? styles['button-inactive'] : ''}`} onClick={prevPage}>Prev</button>
+            <button className={`${styles['button']} ${pageNo === totalPages ? styles['button-inactive'] : ''}`} onClick={nextPage}>Next</button>
         </div>
         </div>  
         </>
