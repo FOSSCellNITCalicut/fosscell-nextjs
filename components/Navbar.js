@@ -54,6 +54,7 @@ export default function Navbar() {
                             width={248}
                             height={78}
                             objectFit="scale-down" 
+                            priority={true}
                         />
                  </Link>
                  {
