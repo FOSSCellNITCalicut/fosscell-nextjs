@@ -90,13 +90,13 @@
     position: absolute;
     width: 100%;
     /* padding-top : 1rem; */
-    padding-left : 1rem;
+    /* padding-left : 1rem; */
     /* padding-bottom: 0.5rem; */
     opacity: 1;
     height: 12rem;
     /* border-bottom: 0.3rem solid white; */
     /* box-shadow: 0rem 0rem 2rem black; */
-    transition:  height 0.5s linear, opacity 0.2s linear;
+    transition:  height 0.2s linear, opacity 0.3s linear;
 }
 
 .nav-menu-mobile::before {
@@ -112,9 +112,10 @@
 
 
 .nav-menu-mobile-hidden {
-    display : none;
+    top : -99rem;
+    /* display : none; */
     opacity: 0;
-    /* height : 0; */
+    height : 0;
     /* padding : 0; */
     border : none;
 }
@@ -123,11 +124,16 @@
     margin-bottom: 1rem;
     font-size: 1.5rem;
     color : white;
+    padding-left : 1rem;
 }
 
 .nav-link-mobile-active {
     composes : nav-link-mobile;
     color: var(--orange);
+    background-color: white;
+    width:fit-content;
+    padding : 0.3rem 2rem 0.3rem 1rem;
+    border-radius : 0rem 1rem 1rem 0rem;
 }
 
 .nav-link-mobile:active {
