@@ -94,9 +94,9 @@
     /* padding-bottom: 0.5rem; */
     opacity: 1;
     height: 12rem;
-    /* border-bottom: 0.3rem solid white; */
+    border-bottom: 0.1rem solid white;
     /* box-shadow: 0rem 0rem 2rem black; */
-    transition:  height 0.2s linear, opacity 0.3s linear;
+    transition:  height 0.2s ease-out, opacity 0.3s ease-in-out;
 }
 
 .nav-menu-mobile::before {
@@ -107,7 +107,7 @@
   width: 100%;
   height: 0.05rem; 
   background-color: rgba(0, 0, 0, 0.2); 
-  box-shadow: 0rem 0rem 0.3rem black;
+  box-shadow: 0rem 0.18rem 0.1rem var(--orange);
 }
 
 
@@ -124,14 +124,15 @@
     margin-bottom: 1rem;
     font-size: 1.5rem;
     color : white;
+    width:fit-content;
     padding-left : 1rem;
 }
+
 
 .nav-link-mobile-active {
     composes : nav-link-mobile;
     color: var(--orange);
     background-color: white;
-    width:fit-content;
     padding : 0.3rem 2rem 0.3rem 1rem;
     border-radius : 0rem 1rem 1rem 0rem;
 }
