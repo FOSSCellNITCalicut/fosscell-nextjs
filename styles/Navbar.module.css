@@ -49,6 +49,7 @@
     margin-left : 1.5rem;
     margin-right : 1.5rem;
     font-size : 1.6rem;
+    user-select: none;
 }
 
 .nav-link:hover {
