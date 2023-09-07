@@ -21,15 +21,6 @@ function ParseDate({date}) {
 
 export async function getServerSideProps({params}) {
   
-  const ret = await axios.get(`https://public-api.wordpress.com/rest/v1.1/sites/${process.env.SITE}/posts/${params.id}`);
-  const data = await ret.data;
-  let newsData = await ret.data;
-  newsData =  {
-      id : newsData.ID,
-      date : newsData.date,
-      title : newsData.title,
-      description : newsData.content
-    }
   return {
     props : {
       params,
