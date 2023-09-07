@@ -52,6 +52,7 @@
     justify-content: space-between;
     width: 90%;
     color : white;
+    transition: transform 0.5s ease-in;
 }
 
 .event-card {
@@ -67,6 +68,13 @@
     user-select: none;
     padding : 1rem 1.5rem;
     border : 0.1rem solid white;
+    transition: border-radius 0.3s linear, opacity 0.3s linear;
+    
+}
+
+.hidden-card {
+    opacity : 0;
+    border-radius: 1.8rem;
 }
 
 .event-card:active {

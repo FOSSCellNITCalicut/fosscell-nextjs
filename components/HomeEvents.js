@@ -30,6 +30,7 @@ const [loading, setLoading] = useState(true);
 const [newsData, setNewsData] = useState(null);
 const [cardsPerPage, setCardPerPage] = useState(1);
 const [currentPage, setCurrentPage] = useState(0);
+const [hidden, setHidden] = useState(false);
 let totalPages = 6 / cardsPerPage;
 
 
@@ -39,7 +40,7 @@ useEffect(() => {
     }
     handleCardsPerPage();
     async function loadData() {
-        const ret = await axios.get(`https://public-api.wordpress.com/rest/v1.1/sites/${site}/posts/?per_page=6`);
+        const ret = await axios.get(`https://public-api.wordpress.com/rest/v1.1/sites/${site}/posts/?number=6&page=1`);
         let data = await ret.data;
         data = await data.posts.slice(0, 6);
         data =  await data.map((news) => {
@@ -62,19 +63,27 @@ useEffect(() => {
 
 
 
+
 const goToNextPage = () => {
+  setHidden(true); 
   setCurrentPage((prevPage) => (prevPage + 1) % totalPages);
+  setTimeout(() => {
+     setHidden(false); 
+  }, 100);
 };
 
 
 const goToPreviousPage = () => {
+  setHidden(true); 
   setCurrentPage((prevPage) =>
     prevPage === 0 ? totalPages - 1 : prevPage - 1
   );
+  setTimeout(() => {
+     setHidden(false); 
+  }, 100);
 };
 
 const startIndex = currentPage * cardsPerPage;
-
 
 return (
     <div className={styles['event-container']}>
@@ -96,7 +105,8 @@ return (
             {
               newsData && (
 
-              <div className={styles['event-list']}>
+              <div className={styles['event-list']}
+              >
                   {
                       newsData.slice(startIndex, startIndex + cardsPerPage).map((news) => {
                         let ret = null
@@ -106,7 +116,7 @@ return (
                         key={news.id}
                         href={`/events/${news.id}`}
                         passHref
-                        className={styles['event-card']}
+                        className={`${styles['event-card']} ${hidden ? styles['hidden-card'] : ""}`}
                         >
                               <ParseDate date={news.date} />
                               <h3 className={styles['event-card-heading']}>
