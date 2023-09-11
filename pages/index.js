@@ -5,6 +5,9 @@ import styles from '@/styles/Home.module.css'
 import { useState, useEffect } from 'react'
 import HomeEvents from '@/components/HomeEvents'
 import axios from 'axios'
+import Link from 'next/link'
+import {IoMdClose} from "react-icons/io"
+import { useEventContext } from '@/components/EventContext'
 
 // const inter = Inter({ subsets: ['latin'] });
 
@@ -37,6 +40,13 @@ export async function getServerSideProps() {
 }
 
 export default function Home({site}) {
+  const { hid, setHidden } = useEventContext();
+
+  const handleHidden = () => {
+    console.log("hi");
+    setHidden(true);
+  }
+
   return (
     <div className={styles['home']}>
       <div className={styles['intro-container']}>
@@ -65,6 +75,15 @@ export default function Home({site}) {
           </div>
       </div>
       <HomeEvents site={site}/>
+      <div className={`${styles['newsletter-p']} ${hid ? styles['hidden-news'] : " "}`}>
+        <p className={styles['newsletter-desc']}>Check out our monthly newsletter <a className={styles['newsletter-link']} href="https://newsletter.fosscell.org">here!</a></p>
+        <div className={`${styles['newsletter-logo']} ${hid ? styles['hidden-news'] : ''}`}>
+        <IoMdClose
+          onClick={handleHidden}
+          size="20"
+        />
+        </div>
+      </div>
     </div> 
   )
 }

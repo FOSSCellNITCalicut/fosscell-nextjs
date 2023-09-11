@@ -6,9 +6,10 @@ export const EventProvider = ({ children }) => {
   const [newsData, setNewsData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
+  const [hid, setHidden] = useState(false);
 
   return (
-    <EventContext.Provider value={{ newsData, setNewsData, loading, setLoading, currentPage, setCurrentPage }}>
+    <EventContext.Provider value={{ newsData, setNewsData, loading, setLoading, currentPage, setCurrentPage , hid, setHidden}}>
       {children}
     </EventContext.Provider>
   );
