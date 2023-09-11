@@ -4,6 +4,7 @@ import {AiOutlineDoubleRight, AiOutlineDoubleLeft } from 'react-icons/ai'
 import Link from 'next/link'
 import parse from 'html-react-parser'
 import axios from 'axios'
+import { useEventContext } from './EventContext';
 
 
 function ParseDate({date}) {
@@ -26,8 +27,9 @@ function ParseDate({date}) {
 
 export default function HomeEvents({site}) {
 
-const [loading, setLoading] = useState(true);
-const [newsData, setNewsData] = useState(null);
+// const [loading, setLoading] = useState(true);
+// const [newsData, setNewsData] = useState(null);
+const {newsData, setNewsData, loading, setLoading} = useEventContext();
 const [cardsPerPage, setCardPerPage] = useState(1);
 const [currentPage, setCurrentPage] = useState(0);
 const [hidden, setHidden] = useState(false);
@@ -55,7 +57,9 @@ useEffect(() => {
       setNewsData(data);
     }
     window.addEventListener('resize', handleCardsPerPage);
-    loadData();
+    if (!newsData) {
+      loadData();
+    }
     return  () => {
         window.removeEventListener('resize', handleCardsPerPage)
     }

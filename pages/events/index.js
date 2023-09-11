@@ -3,6 +3,7 @@ import axios from 'axios'
 import Link from 'next/link';
 import parse from 'html-react-parser'
 import { useState, useEffect } from 'react';
+import { useEventsPageContext } from '@/components/EventContext';
 
 
 export async function getServerSideProps() {
@@ -30,10 +31,12 @@ function ParseDate({date}) {
 }
 
 export default function Events({site}) {
-    const [loading, setLoading] = useState(true);
-    const [newsData, setNewsData] = useState(null);
-    const [pageNo, setPageNo] = useState(1);
-    const [totalPages, setTotalPages] = useState(1);
+    // const [loading, setLoading] = useState(true);
+    // const [newsData, setNewsData] = useState(null);
+    // const [pageNo, setPageNo] = useState(1);
+    // const [totalPages, setTotalPages] = useState(1);
+    const {newsData, setNewsData, loading, setLoading, pageNo, setPageNo, totalPages, setTotalPages} = useEventsPageContext();
+      
 
 useEffect(() => {
     async function loadData() {
