@@ -11,13 +11,14 @@ import {
     BsFacebook, 
     BsLinkedin
   } from "react-icons/bs";
-
+import { useEventContext } from './EventContext';
 export default function Footer() {
     
     const {pathname} = useRouter();
     const [mobile, setMoblie] = useState(false);
+    const {hid} = useEventContext();
     return (
-        <div className={styles['footer']}>
+        <div className={`${styles['footer']} ${!hid ? styles['newsletter-long'] : ""}`}>
             <div className={styles['footer-navbar']}>
                 <Link
                  href='/'

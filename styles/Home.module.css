@@ -165,6 +165,7 @@
   width: 100%;
   background-color: var(--orange);
   z-index: 59;
+  word-spacing: -0.2rem;
 }
 
 
@@ -179,11 +180,12 @@
 }
 
 .newsletter-link {
-  color : white;
+  color : var(--light-grey);
   user-select: none;
   /* margin-left: 0.5rem; */
   text-decoration: underline;
-  font-style: italic;
+  font-style:italic;
+  font-weight: 800;
 }
 
 .hidden-news {

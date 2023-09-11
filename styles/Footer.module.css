@@ -10,6 +10,11 @@
     padding-left : 2rem;
     padding-right : 11rem;
     color : white;
+    transition: margin 0.3s ease-in-out;
+}
+
+.newsletter-long {
+   margin-bottom: 3.5rem;
 }
 
 .footer-social-contact-wrapper {

@@ -12,8 +12,8 @@ export default function App({ Component, pageProps }) {
     <EventsPageProvider>
       <Component {...pageProps} />
     </EventsPageProvider>
+    <Footer />
    </EventProvider>
-   <Footer />
    </>
   )
 }
