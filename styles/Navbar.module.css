@@ -100,7 +100,7 @@
     /* border-style:double; */
     border-radius: 0rem 0rem 1rem 1rem;
     /* box-shadow: 0rem 0rem 2rem black; */
-    transition:  height 0.2s ease-in-out, opacity 0.3s ease-in-out;
+    transition:   opacity 0.16s ease-in-out;
 }
 
 /* .nav-menu-mobile::before {
