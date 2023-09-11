@@ -29,9 +29,9 @@ export default function HomeEvents({site}) {
 
 // const [loading, setLoading] = useState(true);
 // const [newsData, setNewsData] = useState(null);
-const {newsData, setNewsData, loading, setLoading} = useEventContext();
+const {newsData, setNewsData, loading, setLoading, currentPage, setCurrentPage} = useEventContext();
 const [cardsPerPage, setCardPerPage] = useState(1);
-const [currentPage, setCurrentPage] = useState(0);
+// const [currentPage, setCurrentPage] = useState(0);
 const [hidden, setHidden] = useState(false);
 let totalPages = 6 / cardsPerPage;
 

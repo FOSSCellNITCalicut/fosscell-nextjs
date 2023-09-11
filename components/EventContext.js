@@ -5,9 +5,10 @@ const EventContext = createContext();
 export const EventProvider = ({ children }) => {
   const [newsData, setNewsData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(0);
 
   return (
-    <EventContext.Provider value={{ newsData, setNewsData, loading, setLoading }}>
+    <EventContext.Provider value={{ newsData, setNewsData, loading, setLoading, currentPage, setCurrentPage }}>
       {children}
     </EventContext.Provider>
   );
