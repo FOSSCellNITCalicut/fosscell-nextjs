@@ -166,6 +166,9 @@
   background-color: var(--orange);
   z-index: 59;
   word-spacing: -0.2rem;
+  font-family :'Courier New', Courier, monospace;
+  font-size : 1rem;
+  font-weight: 500;
 }
 
 
@@ -180,12 +183,12 @@
 }
 
 .newsletter-link {
-  color : var(--light-grey);
+  color : white;
   user-select: none;
   /* margin-left: 0.5rem; */
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-style:italic;
-  font-weight: 800;
+  font-weight: bolder;
 }
 
 .hidden-news {

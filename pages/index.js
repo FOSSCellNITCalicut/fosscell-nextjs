@@ -76,7 +76,7 @@ export default function Home({site}) {
       </div>
       <HomeEvents site={site}/>
       <div className={`${styles['newsletter-p']} ${hid ? styles['hidden-news'] : " "}`}>
-        <p className={styles['newsletter-desc']}>Check out our monthly newsletter <a className={styles['newsletter-link']} href="https://newsletter.fosscell.org">here!</a></p>
+        <p className={styles['newsletter-desc']}>Check out our monthly newsletter <a className={styles['newsletter-link']} href="https://newsletter.fosscell.org">here</a>!</p>
         <div className={`${styles['newsletter-logo']} ${hid ? styles['hidden-news'] : ''}`}>
         <IoMdClose
           onClick={handleHidden}
