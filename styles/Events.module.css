@@ -89,6 +89,8 @@
     justify-content: space-around;
     position: absolute;
     bottom : 0.7rem;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .button {
@@ -100,6 +102,8 @@
     padding : 0.5rem;
     border-radius: 1rem 0 0 1rem;
     border-left : 1px solid white;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .button-inactive {

@@ -9,7 +9,8 @@ import {
     BsTwitter,
     BsTelegram,
     BsFacebook, 
-    BsLinkedin
+    BsLinkedin,
+    BsMastodon
   } from "react-icons/bs";
 import { useEventContext } from './EventContext';
 export default function Footer() {
@@ -18,7 +19,7 @@ export default function Footer() {
     const [mobile, setMoblie] = useState(false);
     const {hid} = useEventContext();
     return (
-        <div className={`${styles['footer']} ${!hid ? styles['newsletter-long'] : ""}`}>
+        <div className={`${styles['footer']} ${!hid && pathname === '/' ? styles['newsletter-long'] : ""}`}>
             <div className={styles['footer-navbar']}>
                 <Link
                  href='/'
@@ -75,8 +76,8 @@ export default function Footer() {
                         fosscell@nitc.ac.in
                     </Link>
                     <div className={styles['social-media-list']}>
-                        <Link href="https://facebook.com/profile.php?id=333141540396903">
-                            <BsFacebook className={styles["logo"]} size="20" />
+                        <Link href="https://mastodon.social/@FOSSCell@floss.social">
+                            <BsMastodon className={styles["logo"]} size="20" />
                         </Link>
                         <Link href="https://www.instagram.com/fosscellnitc/">
                             <BsInstagram className={styles["logo"]} size="20" />
