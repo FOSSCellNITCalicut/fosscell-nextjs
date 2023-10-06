@@ -41,7 +41,7 @@
     margin-left : 2rem;
     margin-right : 2rem;
     width : 100%;
-    padding : 4rem 2rem;
+    padding : 4rem 20rem;
     align-items: center;
     border-radius: 2rem;
     /* box-shadow: 0.3rem 0.3rem 1rem var(--grey); */
@@ -51,7 +51,7 @@
 .event-card-heading {
     width: 100%;
     font-size : 4rem;
-    text-align: start;
+    text-align: center;
     margin-bottom: 1.8rem;
     color : var(--orange);
 }
@@ -77,6 +77,28 @@
     object-fit: scale-down;
     width: 100%;
     /* border : 3px solid black; */
+}
+
+
+@media (max-width : 1400px) {
+    .event-container {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+}
+
+@media (max-width : 1200px) {
+    .event-container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media (max-width : 1000px) {
+    .event-container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }
 
 
