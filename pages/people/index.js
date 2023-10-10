@@ -138,12 +138,6 @@ const member =[
         image:Vysakh
     },
     {
-        id:4,
-        name:"Joel Robin P",
-        position:"Event Coordinator",
-        image:JoelRobin
-    },
-    {
         id:5,
         name:"Sreevalsan S",
         position:"Event Coordinator",
