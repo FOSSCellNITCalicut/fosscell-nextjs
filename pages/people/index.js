@@ -12,7 +12,6 @@ import Cliford from "@/public/images/Team/Cliford.jpg"
 import Hadif from "@/public/images/Team/Hadif_Yassin_Hameed.JPG"
 import Hemanth from "@/public/images/Team/Hemanth Chodisetti.jpg"
 import JoelJohn from "@/public/images/Team/Joel George John.jpg"
-import JoelRobin from "@/public/images/Team/Joel Robin P.jpg"
 import John from "@/public/images/Team/John_D.png"
 import Juby from "@/public/images/Team/Juby Johnson.JPG"
 import Madhav from "@/public/images/Team/Madhav_Prabhu.jpg"
@@ -132,7 +131,7 @@ const member =[
         image:Ameen
     },
     {
-        id:20,
+        id:4,
         name:"Vysakh Premkumar",
         position:"Mentor",
         image:Vysakh
