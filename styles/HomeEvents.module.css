@@ -1,7 +1,11 @@
-
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .loading-spinner {
@@ -12,11 +16,11 @@
     width: 50px;
     height: 50px;
     animation: spin 1s linear infinite;
-    color : white;
+    color: white;
 }
 
 .loading-wrapper {
-    width : 95%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -26,16 +30,16 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    padding : 2rem 1rem 1.3rem 1rem;
+    padding: 2rem 1rem 1.3rem 1rem;
     height: 33rem;
     justify-content: space-between;
     /* border-radius : 3rem 3rem 0 0; */
 }
 
 .event-heading {
-    color : white;
-    padding-right : 1rem;
-    font-size : 2.5rem;
+    color: white;
+    padding-right: 1rem;
+    font-size: 2.5rem;
     font-weight: 900;
     text-shadow: 0.07rem 0.07rem 0.05rem var(--orange);
     margin-bottom: 1rem;
@@ -45,7 +49,7 @@
 .event-list-wrapper {
     display: flex;
     justify-content: space-around;
-    color : white;
+    color: white;
     align-items: center;
 }
 
@@ -53,7 +57,7 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
-    color : white;
+    color: white;
     transition: transform 0.5s ease-in;
 }
 
@@ -61,21 +65,46 @@
     display: flex;
     flex-direction: column;
     background-color: black;
-    justify-content: flex-start;
+    justify-content: center;
     /* margin-left : 1rem; */
-    color : var(--orange);
-    width : 32%;
+    color: var(--orange);
+    width: 32%;
     height: 20rem;
-    border-radius: 1rem;
     user-select: none;
-    padding : 1rem 1.5rem;
-    border : 0.1rem solid white;
-    transition: border-radius 0.3s linear, opacity 0.2s linear;
-    
+    padding: 1rem 1.5rem;
+    border: 6px solid var(--orange);
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    filter: opacity(0.5);
+}
+
+.contents {
+    position: relative;
+    z-index: 1;
+}
+
+.hoverable:hover .background {
+    fill: white;
+    transition: fill 0.3s;
+    /* Add transition for smooth color change */
+}
+
+.hoverable:hover .text {
+    fill: #FA8860;
+    transition: fill 0.3s;
+    /* Add transition for smooth color change */
 }
 
 .hidden-card {
-    opacity : 0;
+    opacity: 0;
     border-radius: 1.5rem;
 }
 
@@ -84,22 +113,69 @@
 }
 
 .event-card-date {
-   margin-bottom: 0.5rem; 
-   color : var(--light-grey)
+    margin-bottom: 0.5rem;
+    color: #FA8860;
+    font-family: Roboto Mono;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 102.5%;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.event-card-date-month {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    font-family: Roboto Mono;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 102.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.event-card-date-year {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: Roboto Mono;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 102.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .event-card-heading {
-   font-size : 1.5rem; 
-   margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    /* text-align: justify; */
-    min-height : 3.5rem;
-    /* border : 1px solid white; */
+    color: white;
+    min-height: 3.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.event-card-read-more {
+    font-size: 1.2rem;
+    font-weight: 800;
+    user-select: none;
+    color: white;
+    margin-top: 0.5rem;
+    width: 115.649px;
+    height: 29.704px;
+    flex-shrink: 0;
+    fill: #FA8860;
 }
 
 /* .event-card-desc {
@@ -113,6 +189,15 @@
     text-overflow: ellipsis;
 } */
 
+.event-card-read-more {
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    user-select: none;
+    color: black;
+}
+
 .event-card-desc {
     width: 100%;
     overflow: hidden;
@@ -120,24 +205,24 @@
     display: -webkit-box;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
-    font-size : 1rem;
+    font-size: 1rem;
     text-align: justify;
     line-height: 1.3rem;
-    color : white;
-  }
+    color: white;
+}
 
-  
+
 
 .event-read-more {
     width: 100%;
     text-align: center;
     font-weight: 800;
-    font-size : 1.2rem;
+    font-size: 1.2rem;
     user-select: none;
 }
 
 .event-read-more:hover {
-    color : var(--light-grey);
+    color: var(--light-grey);
 }
 
 .event-read-more:active {
@@ -149,7 +234,7 @@
 }
 
 .next-prev-button:hover {
-    color : var(--light-grey);
+    color: var(--light-grey);
 }
 
 .next-prev-button:active {
@@ -159,17 +244,20 @@
 
 @media (max-width : 900px) {
     .event-card {
-        width : 48%;
+        width: 48%;
+        height: 20rem;
     }
+
     .event-list {
-        width : 85%;
+        width: 85%;
     }
 }
 
 @media (max-width : 700px) {
     .event-card {
-        width : 100%;
+        width: 100%;
     }
+
     .event-heading {
         width: 100%;
         text-align: center;
@@ -179,18 +267,21 @@
 
 @media (max-width : 600px) {
     .event-list {
-        width : 75%;
+        width: 75%;
     }
+
     .event-container {
-        padding-left : 0.1rem;
-        padding-right : 0.1rem;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
         padding-bottom: 1rem;
         /* height : 28rem; */
     }
+
     .event-heading {
-        font-size : 2.2rem;
+        font-size: 2.2rem;
     }
+
     .event-card-desc {
-        font-size : 0.9rem;
+        font-size: 0.9rem;
     }
 }
