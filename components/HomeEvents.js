@@ -5,7 +5,7 @@ import Link from 'next/link'
 import axios from 'axios'
 import parse from 'html-react-parser';
 import { useEventContext } from './EventContext';
-import ClickHereSvg from './ClickHereSvg';
+import ClickHereSvg from './ClickhereSvg';
 
 
 function ParseDate({ date }) {
