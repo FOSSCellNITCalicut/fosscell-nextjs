@@ -36,8 +36,8 @@ const ClickHereSvg = () => {
       onMouseLeave={handleMouseLeave}
     >
       <path d="M0 0H150L180 40H0V0Z" style={svgStyle} />
-      <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" style={textStyle}>
-        Click here
+      <text x="40%" y="50%" textAnchor="middle" dominantBaseline="middle" style={textStyle}>
+        Read More
       </text>
     </svg>
   );

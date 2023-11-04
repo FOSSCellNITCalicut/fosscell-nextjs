@@ -59,7 +59,8 @@ export default function HomeEvents({ site }) {
           id: news.ID,
           date: news.date,
           title: news.title,
-          description: news.content
+          description: news.content,
+          image: news.featured_image
         }
       })
       setLoading(false);
@@ -73,9 +74,6 @@ export default function HomeEvents({ site }) {
       window.removeEventListener('resize', handleCardsPerPage)
     }
   }, [])
-
-
-
 
   const goToNextPage = () => {
     setHidden(true);
@@ -122,13 +120,13 @@ export default function HomeEvents({ site }) {
             >
               {
                 newsData.slice(startIndex, startIndex + cardsPerPage).map((news) => {
-                  console.log(news.id);
                   let ret = null
                   if (news) {
                     ret = (
                       <div className={`${styles['event-card']} ${hidden ? styles['hidden-card'] : ""}`}>
                         <div>
-                          <img className={styles['image']} src={`/images/backgroundImages/image${news.id}.jpeg`} alt="placeholder" />
+                          {console.log(news.image)}
+                          <img className={styles['image']} src={`${news.image}`}/>
                         </div>
                         <div className={styles['contents']}>
                           <ParseDate date={news.date} />
