@@ -234,9 +234,11 @@
 .event-read-more {
     width: 100%;
     text-align: center;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 1.2rem;
     user-select: none;
+    color: white;
+    text-shadow: 0.05rem 0.05rem 0.02rem var(--orange);
 }
 
 .event-read-more:hover {
