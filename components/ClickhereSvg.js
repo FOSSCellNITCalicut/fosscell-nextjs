@@ -28,7 +28,7 @@ const ClickHereSvg = () => {
 
   return (
     <svg
-      width="200"
+      width="170"
       height="60"
       viewBox="0 0 180 40"
       xmlns="http://www.w3.org/2000/svg"

@@ -99,7 +99,7 @@ export default function HomeEvents({ site }) {
   return (
     <div className={styles['event-container']}>
       <h2 className={styles['event-heading']}>
-        News & Events
+        Latest Events
       </h2>
       <div className={styles['event-list-wrapper']}>
 

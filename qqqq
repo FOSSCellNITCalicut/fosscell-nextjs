@@ -1,0 +1,347 @@
+[33mcommit ad85bdca1e2a4c63a65374be93cd26408a39af9a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32mcurr[m[33m)[m
+Author: Mohammed Ameen <ma6681221@gmail.com>
+Date:   Sat Nov 4 10:00:13 2023 +0530
+
+    fixed the title
+
+[33mcommit d1eba3b6ab05eefa9966b2b8d727b844011052b4[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: cf0b81e 7fd3bf5
+Author: Mohammed Ameen <87686699+Ameenafz248@users.noreply.github.com>
+Date:   Sat Nov 4 06:47:37 2023 +0530
+
+    Merge pull request #6 from noufalrahim/main
+    
+    added images
+
+[33mcommit 7fd3bf5ddb2b9399a614309e314786c185f3e07c[m
+Author: Noufal Rahim <noufalrahim@localhost.localdomain>
+Date:   Sat Nov 4 06:32:11 2023 +0530
+
+    added images
+
+[33mcommit cf0b81e3582cd89466a16f01c74ebed31e6bfd0c[m
+Merge: 8d3678e a6e4e2f
+Author: AfthabEK <105716804+AfthabEK@users.noreply.github.com>
+Date:   Fri Nov 3 18:45:33 2023 +0530
+
+    Merge pull request #5 from noufalrahim/main
+    
+    Changed Cards in Home Page
+
+[33mcommit a6e4e2ffbbebfa79beb2ff11c4e23d1fe041707f[m
+Author: Noufal Rahim <noufalrahim@localhost.localdomain>
+Date:   Fri Nov 3 18:39:50 2023 +0530
+
+    made changes to cards in home page
+
+[33mcommit 086e7d6af58e0bd87fb446e1445346eca1a4c2aa[m
+Author: Noufal Rahim <noufalrahim@localhost.localdomain>
+Date:   Fri Nov 3 18:32:12 2023 +0530
+
+    made changes to cards in home page
+
+[33mcommit 8d3678ede477c16843b929db3d50175a227abb12[m
+Author: Mohammed Ameen <ma6681221@gmail.com>
+Date:   Tue Oct 17 06:18:47 2023 +0530
+
+    updated team members details
+
+[33mcommit 30d3978480d4ca2d25b75ae67babf6013ec71018[m
+Author: Mohammed Ameen <ma6681221@gmail.com>
+Date:   Tue Oct 10 21:17:31 2023 +0530
+
+    updated team page
+
+[33mcommit a0415e64baa89b3f3c6b4c8f7ba193818805a3f9[m
+Author: Mohammed Ameen <ma6681221@gmail.com>
+Date:   Fri Oct 6 22:13:53 2023 +0530
+
+    Updated Event Details page
+
+[33mcommit 49985279dc4b17140ef0556fba24e36911881188[m
+Author: Mohammed Ameen <ameenafz248@Archfish.bbrouter>
+Date:   Fri Oct 6 20:49:11 2023 +0530
+
+    updated Events page
+
+[33mcommit f76d700f727c90479ccf8948a75775867d2886b7[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Sep 14 18:37:06 2023 +0530
+
+    updated the newsletter link
+
+[33mcommit 52d02a379483d8c279c0566527081282bb3e7798[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Sep 14 18:19:35 2023 +0530
+
+    updated footer links
+
+[33mcommit 3c1086f87e96d287f867b7c8d18e78aba7d17de2[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Sep 11 21:27:26 2023 +0530
+
+    updated footbar
+
+[33mcommit efc0d970ad749809de1786b7ad0f67adb7ab7448[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Sep 11 15:37:46 2023 +0530
+
+    added newsletter link
+
+[33mcommit d247ca60a7051919073508cef365dcb9908578db[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Sep 11 14:22:18 2023 +0530
+
+    updated navbar
+
+[33mcommit f128c38ca44f747e0f0a314f818f67a7affe04bc[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Sep 11 14:20:38 2023 +0530
+
+    updated Home Events Section
+
+[33mcommit 77375846ecc61324d3c8d70b7084567a13ba021c[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Sep 11 14:15:48 2023 +0530
+
+    used contexts to save the fetched data
+
+[33mcommit 199b144da0e3b4a9f52500f00e7224f437742994[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Sep 11 13:52:20 2023 +0530
+
+    fixed scroll position while navigating
+
+[33mcommit b0028e4041b1b485e576653da306491196a4c81f[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Sep 7 22:52:11 2023 +0530
+
+    updated navbar
+
+[33mcommit 2324e80921a5945b7078eab8d2ede2f49f6684fc[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Sep 7 22:06:43 2023 +0530
+
+    updated event details page
+
+[33mcommit 11678a963241f86fe7161b8fb7dcc89f4862afb2[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Sep 7 22:03:59 2023 +0530
+
+    updated Events page
+
+[33mcommit 376f4e0304ef1b97b1cdef7537c2ded338a90cd1[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Sep 7 21:29:20 2023 +0530
+
+    updated HomeEvents
+
+[33mcommit 456ba98b61e6fd1aaf9464b0ef1aa54a119d4b17[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Sun Sep 3 06:55:52 2023 +0530
+
+    updated navbar.module.css
+
+[33mcommit e989c6a981ef6af48377b60eed425972af420bdb[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Sat Sep 2 09:18:45 2023 +0530
+
+    updated navbar
+
+[33mcommit b06ef632855423f350d730b3b2b045f8b648c183[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Sat Sep 2 09:07:07 2023 +0530
+
+    updated Home event section
+
+[33mcommit 7ffdb1f18e82927388c8c68a865b7f8359a10c8f[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Fri Sep 1 15:39:11 2023 +0530
+
+    updated the logo resolution
+
+[33mcommit af376367abf761be24f514c8042831a5db42b75d[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Fri Sep 1 12:23:26 2023 +0530
+
+    updated Home events section
+
+[33mcommit f8e8e285c73141f1197ef5afe22264588e2a29cb[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Fri Sep 1 12:13:05 2023 +0530
+
+    fixed navbar link color
+
+[33mcommit a6ba20353c030a0e2f04e6399f70746859389558[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Fri Sep 1 12:03:41 2023 +0530
+
+    updated Navbar.js
+
+[33mcommit 2c8aa7c2257d3821f87cc57ab956e1297ed63d94[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Fri Sep 1 10:01:42 2023 +0530
+
+    updated home events section
+
+[33mcommit e364a9db91f01dbc5004fb5e5f446e5e8ae97866[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Fri Sep 1 09:42:16 2023 +0530
+
+    updated event page navigation
+
+[33mcommit db76ab95c42ccdeff97952e960585db52e9952b3[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Fri Sep 1 07:59:01 2023 +0530
+
+    updated event details page
+
+[33mcommit 2a9bf50817b741c2e5e4bb21153238497c01f7db[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Fri Sep 1 07:55:48 2023 +0530
+
+    updated Home Events component
+
+[33mcommit bee5ec6545484e478e199dbab54db2cbdde12568[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Aug 31 22:42:02 2023 +0530
+
+    updated Home Event section
+
+[33mcommit bf11c1d70c31aec5314fac9039be6458ffb12784[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Aug 31 22:30:22 2023 +0530
+
+    updated people page
+
+[33mcommit c6f25d5063d8ebe6fa854adec808df3a10ea96ad[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Aug 31 10:20:14 2023 +0530
+
+    updated our people page
+
+[33mcommit 490f95c38558846c64d3b55e54f5bbb86940829a[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Aug 31 07:22:46 2023 +0530
+
+    added meta tags
+
+[33mcommit d0d72864bd4c1251f9768346b8a4c0ff2f6da2b8[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Thu Aug 31 07:01:34 2023 +0530
+
+    updated event details page
+
+[33mcommit 91947a32875f63a0cbd0fa435809aa96ba548fe1[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Wed Aug 30 22:13:17 2023 +0530
+
+    edited our people page
+
+[33mcommit 08d0a3ecc78d5c8dbddbada14e222ede18007628[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Tue Aug 29 11:11:27 2023 +0530
+
+    updated Events.module.css
+
+[33mcommit b3011514da6bbc75119b9a8fe2c29b428a1da2b6[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Tue Aug 29 10:25:31 2023 +0530
+
+    fixed Home event section
+
+[33mcommit fd016a1dec21ba4d11e42f778197e8c56b188377[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Tue Aug 29 00:36:06 2023 +0530
+
+    updated Navbar.js
+
+[33mcommit 088d568692b782362a628505a11ea0c8131ebd6b[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Tue Aug 29 00:04:19 2023 +0530
+
+    updated EventDetails.module.css
+
+[33mcommit a5b83cd44b6feeb9f2e6d91e30d0002aeec8ec32[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Aug 28 23:59:11 2023 +0530
+
+    updated EventDetails.module.css
+
+[33mcommit 87973e9f391386b143d277f8ccfbdb08eae2c140[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Aug 28 23:48:43 2023 +0530
+
+    updated Events.module.css
+
+[33mcommit d28aed4c53ff7aeeb7e2ca9d78bb0f1369ee1466[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Aug 28 23:21:25 2023 +0530
+
+    made news fetching csr
+
+[33mcommit 3721a8c8f139815db5c8966befb8a4c7a2cd6038[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Aug 28 18:30:36 2023 +0530
+
+    updated EventDetails.module.css
+
+[33mcommit c0ec39a7af8642dcb88ab17e321582177176d55e[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Aug 28 18:25:59 2023 +0530
+
+    updated Navbar.module.css
+
+[33mcommit dee838d24139d78adc111f26d6dfabaabf407e74[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Aug 28 18:10:33 2023 +0530
+
+    removed image.js
+
+[33mcommit 4f1e0860d05b928b97e0f4a604283286088538e7[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Aug 28 18:07:07 2023 +0530
+
+    updated image.js
+
+[33mcommit 4387906f3e06589682c1833fe4d0e22bac221216[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Aug 28 16:37:54 2023 +0530
+
+    made events page responsive
+
+[33mcommit a4c265d4dedbd14af321ba024b7bb8e010ea8abc[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Mon Aug 28 16:06:30 2023 +0530
+
+    implemented people and events page
+
+[33mcommit 39d8dcfa9c933792fe24a9255ddebd0db3fbab8c[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Sun Feb 7 06:29:03 2106 -21790626
+
+    implemented whoWeAre page
+
+[33mcommit ed34766a6d72c954c24aa97f7a2d58d940d34fe8[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Sun Aug 27 13:50:32 2023 +0530
+
+    implemented home page
+
+[33mcommit 67bcccf9ac7468af895bfb7e49105b051b976e76[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Sun Aug 27 10:59:57 2023 +0530
+
+    implemented footer
+
+[33mcommit 75950a91baa7ab43eade391f577e3e802f9e9f94[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Sat Aug 26 17:10:08 2023 +0530
+
+    implemented navbar
+
+[33mcommit 9d6fd934dc16ef9ac62381dc65463d95670675f8[m
+Author: Ameenafz248 <ma6681221@gmail.com>
+Date:   Sat Aug 26 09:21:35 2023 +0530
+
+    initial commit
