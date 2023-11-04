@@ -80,16 +80,39 @@
     flex-direction: column;
     background-color: black;
     justify-content: center;
-    /* margin-left : 1rem; */
     color: var(--orange);
     width: 32%;
     height: 20rem;
     user-select: none;
     padding: 1rem 1.5rem;
-    border: 2px solid var(--orange);
+    /* border: 0.75px solid var(--orange); */
     border-radius: 1rem;
     position: relative;
+    transition: transform 0.2s, box-shadow 0.2s; 
 }
+
+/* .event-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100.25%;
+    height: 100.25%;
+    border: 0.5px solid white;
+    border-radius: 1rem;
+    pointer-events: none; 
+    box-sizing: border-box; 
+} */
+
+
+
+.event-card:hover {
+    transform: scale(1.05); 
+}
+
+
+
+
 
 .image {
     position: absolute;

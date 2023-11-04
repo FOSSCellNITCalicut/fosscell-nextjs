@@ -163,7 +163,7 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  background-color: var(--orange);
+  background-color: var(--light-grey);
   z-index: 59;
   word-spacing: -0.2rem;
   font-family :'Courier New', Courier, monospace;
@@ -183,7 +183,7 @@
 }
 
 .newsletter-link {
-  color : white;
+  color : var(--orange);
   user-select: none;
   /* margin-left: 0.5rem; */
   /* text-decoration: underline; */
