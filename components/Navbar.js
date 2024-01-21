@@ -86,6 +86,14 @@ export default function Navbar() {
                      >
                         Who We Are
                      </Link>
+                     <a
+                        className={pathname === '/wiki' ? styles['nav-link-active'] : styles['nav-link']}
+                        href='https://wiki.fosscell.org'
+                        target='_blank'  // Open in a new tab
+                        rel='noopener noreferrer'
+                     >
+                        Wiki
+                     </a>
                      </div> 
                   )
                  }
@@ -143,6 +151,14 @@ export default function Navbar() {
                  >
                     Who We Are
                  </Link>
+                 <a
+                     className={pathname === '/wiki' ? styles['nav-link-active'] : styles['nav-link']}
+                     href='https://wiki.fosscell.org'
+                     target='_blank'
+                     rel='noopener noreferrer'
+                  >
+                  Wiki
+                  </a>
             </nav>
             )}
    </>
