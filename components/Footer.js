@@ -53,6 +53,22 @@ export default function Footer() {
                      >
                         Events
                      </Link>
+                     <a
+                     className={pathname === '/wiki' ? styles['nav-link-active'] : styles['nav-link']}
+                     href='https://newsletter.fosscell.org/'
+                     target='_blank'
+                     rel='noopener noreferrer'
+                     >
+                     Blog
+                     </a>
+                     <a
+                     className={pathname === '/wiki' ? styles['nav-link-active'] : styles['nav-link']}
+                     href='https://wiki.fosscell.org'
+                     target='_blank'
+                     rel='noopener noreferrer'
+                     >
+                     Wiki
+                     </a>
                      <Link
                         className={pathname === '/people' ? styles['nav-link-active'] : styles['nav-link']}
                         href='/people'

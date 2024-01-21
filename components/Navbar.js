@@ -17,7 +17,7 @@ export default function Navbar() {
     useEffect(() => {
 
       const handleResize = () => {
-         setMoblie(window.innerWidth <= 1000);
+         setMoblie(window.innerWidth <= 1330);
       }
       handleResize();
       window.addEventListener('resize', handleResize);
@@ -145,15 +145,8 @@ export default function Navbar() {
                  >
                     Events
                  </Link>
-                 <Link
-                    className={pathname === '/people' ? styles['nav-link-mobile-active'] : styles['nav-link-mobile']}
-                    href='/people'
-                     onClick={toggleNavVisibility}
-                 >
-                    Our People
-                 </Link>
                  <a
-                     className={pathname === '/wiki' ? styles['nav-link-active'] : styles['nav-link']}
+                     className={pathname === '/wiki' ? styles['nav-link-mobile-active'] : styles['nav-link-mobile']}
                      href='https://newsletter.fosscell.org/'
                      target='_blank'
                      rel='noopener noreferrer'
@@ -161,13 +154,20 @@ export default function Navbar() {
                   Blog
                   </a>
                  <a
-                     className={pathname === '/wiki' ? styles['nav-link-active'] : styles['nav-link']}
+                     className={pathname === '/wiki' ? styles['nav-link-mobile-active'] : styles['nav-link-mobile']}
                      href='https://wiki.fosscell.org'
                      target='_blank'
                      rel='noopener noreferrer'
                   >
                   Wiki
                   </a>
+                 <Link
+                    className={pathname === '/people' ? styles['nav-link-mobile-active'] : styles['nav-link-mobile']}
+                    href='/people'
+                     onClick={toggleNavVisibility}
+                 >
+                    Our People
+                 </Link>
                  <Link
                     className={pathname === '/whoweare' ? styles['nav-link-mobile-active'] : styles['nav-link-mobile']}
                     href='/whoweare'
