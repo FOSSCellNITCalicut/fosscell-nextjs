@@ -96,9 +96,8 @@
     width: 100%;
     /* padding-top : 1rem; */
     /* padding-left : 1rem; */
-    /* padding-bottom: 0.5rem; */
+    padding-bottom: 0.5rem;
     opacity: 1;
-    height: 12rem;
     border : none;
     border-bottom: 0.1rem groove var(--orange);
     /* border-style:double; */
