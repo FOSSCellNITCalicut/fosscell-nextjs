@@ -44,7 +44,8 @@ useEffect(() => {
             id : newsData.ID,
             date : newsData.date,
             title : newsData.title,
-            description : newsData.content
+            description : newsData.content,
+            image : newsData.featured_image
           }
       setLoading(false);
       setNewsData(newsData);
@@ -61,9 +62,16 @@ useEffect(() => {
 
               }
               {newsData && 
-              <h3 className={styles['event-card-heading']}>
-                  {parse(newsData.title)}
-              </h3>
+              <div className={styles['event-heading-img-container']}>
+                <img className={styles['image']} src={`${newsData.image}`}/>
+                
+              </div>
+              }
+              {newsData && 
+
+                <h3 className={styles['event-card-heading']}>
+                    {parse(newsData.title)}
+                </h3>
               }
               {newsData && 
               <ParseDate date={newsData.date} />
