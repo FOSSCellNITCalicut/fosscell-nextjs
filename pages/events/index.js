@@ -48,7 +48,8 @@ useEffect(() => {
             id : news.ID,
             date : news.date,
             title : news.title,
-            description : news.content
+            description : news.content,
+            image: news.featured_image
           }
         })
       setLoading(false);
@@ -100,6 +101,8 @@ const prevPage = () => {
                       passHref
                       className={styles['event-card']}
                       >
+                            
+                            <img className={styles['image']} src={`${news.image}`}/>
                             <ParseDate date={news.date} />
                             <h3 className={styles['event-card-heading']}>
                                 {parse(news.title)}
