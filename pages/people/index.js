@@ -16,6 +16,7 @@ import noufal_rahim from "@/public/images/Team/noufal_rahim.jpg"
 import Prithvi_G_Bhat from "@/public/images/Team/Prithvi_G_Bhat.jpg"
 import Vinit_Keshri from "@/public/images/Team/Vinit_Keshri.jpg"
 import Vivek from "@/public/images/Team/Vivek.jpg"
+import Arjith_Lal from "@/public/images/Team/Arjith_Lal.jpg"
 
 // B21s
 import Afraz from "@/public/images/Team/Afraz Ahmed.jpeg"
@@ -174,46 +175,65 @@ const member = [
     },
     {
         id: 2,
+        name: "Adil",
+        position: "Treasurer",
+        image: Adil
+    },
+    {
+        id: 3,
         name: "Afraz Ahmed",
         position: "Outreach Head",
         image: Afraz
     },
     {
-        id: 3,
+        id: 4,
         name: "Vinit Keshri",
         position: "Content Head",
         image: Vinit_Keshri
     },
     {
-        id: 4,
-        name: "Vivek",
-        position: "Marketing Head",
-        image: Vivek
-    },
-    {
-        id: 7,
+        id: 5,
         name: "noufal_rahim",
         position: "Tech Head",
         image: noufal_rahim
     },
+    
     {
-        id: 5,
+        id: 6,
         name: "Arun Natarajan",
         position: "Design Head",
         image: arun_natarajan
     },
     {
-        id: 6,
+        id: 7,
+        name: "Vivek",
+        position: "Marketing Head",
+        image: Vivek
+    },
+    {
+        id: 8,
+        name: "Joel George John",
+        position: "Media Head",
+        image: JoelJohn
+    },
+    {
+        id: 9,
         name: "Harshini_Babu",
         position: "Event Coordinator",
         image: Harshini_Babu
     },
-
     {
-        id: 8,
+        id: 10,
         name: "Prithvi G Bhat",
         position: "Event Coordinator",
         image: Prithvi_G_Bhat
+    },
+    
+    {
+        id: 11,
+        name: "Arjith Lal",
+        position: "Event Coordinator",
+        image: Arjith_Lal
     },
     // {
     //     id:11,
@@ -221,68 +241,58 @@ const member = [
     //     position:"Member",
     //     image:Unnati
     // },
+    
     {
-        id: 9,
-        name: "Joel George John",
-        position: "Media Head",
-        image: JoelJohn
-    },
-    {
-        id: 10,
+        id: 12,
         name: "Bhukya Chetan Ram",
         position: "Member",
         image: Bhukya
     },
     {
-        id: 11,
+        id: 13,
         name: "Piyush Soni",
         position: "Member",
         image: Piyush
     },
     {
-        id: 12,
+        id: 14,
         name: "Pranav Prashant",
         position: "Member",
         image: Pranav
     },
     {
-        id: 13,
+        id: 15,
         name: "Pranav R Nair",
         position: "Member",
         image: PranavNair
     },
     {
-        id: 14,
+        id: 16,
         name: "Vedasree Rodi",
         position: "Member",
         image: Vedasree
     },
     {
-        id: 15,
+        id: 17,
         name: "Akhil",
         position: "Member",
         image: Akhil
     },
     {
-        id: 16,
+        id: 18,
         name: "Jumana",
         position: "Member",
         image: Jumana
     },
     {
-        id: 17,
+        id: 19,
         name: "Abhishek",
         position: "Member",
         image: Abhishek
     },
+    
     {
-        id: 18,
-        name: "Adil",
-        position: "Member",
-        image: Adil
-    },
-    {
-        id: 19,
+        id: 20,
         name: "Akshay Raj P",
         position: "Member",
         image: AKSHAY_RAJ_P
