@@ -224,7 +224,7 @@ const member = [
     {
         id: 9,
         name: "Joel George John",
-        position: "Member",
+        position: "Media Head",
         image: JoelJohn
     },
     {
