@@ -193,7 +193,7 @@ const member = [
     },
     {
         id: 5,
-        name: "noufal_rahim",
+        name: "Noufal Rahim",
         position: "Tech Head",
         image: noufal_rahim
     },
@@ -218,7 +218,7 @@ const member = [
     },
     {
         id: 9,
-        name: "Harshini_Babu",
+        name: "Harshini Babu",
         position: "Event Coordinator",
         image: Harshini_Babu
     },
