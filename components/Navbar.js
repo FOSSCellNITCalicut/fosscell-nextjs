@@ -48,7 +48,7 @@ export default function Navbar() {
                  className={mobile ? styles['nav-logo-mobile'] : styles['nav-logo']}
                  >
                         <Image
-                            src={"/images/Logo.svg"}
+                            src={"/images/logo.svg"}
                             alt={"FOSSCell logo"}
                             layout="intrinsic"
                             width={230}
