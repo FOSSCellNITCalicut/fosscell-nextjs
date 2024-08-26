@@ -4,6 +4,7 @@ import Link from 'next/link';
 import parse from 'html-react-parser'
 import { useState, useEffect } from 'react';
 import { useEventsPageContext } from '@/components/EventContext';
+import ClickHereSvg from '@/components/ClickhereSvg';
 
 
 export async function getServerSideProps() {
@@ -81,7 +82,8 @@ const prevPage = () => {
 
     return (
         <>
-        <div className={styles['event-list']}>
+        <div className={styles['container']}>
+          <div className={styles['event-list']}>
                 
             {
               loading && <div className={styles['loading-wrapper']}>
@@ -103,12 +105,22 @@ const prevPage = () => {
                       >
                             
                             <img className={styles['image']} src={`${news.image}`}/>
-                            <ParseDate date={news.date} />
-                            <h3 className={styles['event-card-heading']}>
-                                {parse(news.title)}
-                            </h3>
-                            <div className={styles['event-card-desc']}>
-                              {parse(news.description)}
+
+                        <div className={styles['contents']}>
+                          <ParseDate date={news.date} />
+                          <h3 className={styles['event-card-heading']}>
+                            {parse(news.title)}
+                          </h3>
+                          {/* <div className={styles['event-card-desc']}>
+                                {parse(news.description)}
+                              </div> */}
+                          <Link
+                            key={news.id}
+                            href={`/events/${news.id}`}
+                            passHref
+                          >
+                            <ClickHereSvg />
+                          </Link>
                             </div>
                       </Link>
                         )
@@ -117,10 +129,11 @@ const prevPage = () => {
                     })
                  )
             }
-        <div className={styles['nav-bar']}>
-            <button className={`${styles['button']} ${pageNo == 1 ? styles['button-inactive'] : ''}`} onClick={prevPage}>Prev</button>
-            <button className={`${styles['button']} ${pageNo === totalPages ? styles['button-inactive'] : ''}`} onClick={nextPage}>Next</button>
         </div>
+          <div className={styles['nav-bar']}>
+              <button className={`${styles['button']} ${pageNo == 1 ? styles['button-inactive'] : ''}`} onClick={prevPage}>Prev</button>
+              <button className={`${styles['button']} ${pageNo === totalPages ? styles['button-inactive'] : ''}`} onClick={nextPage}>Next</button>
+          </div>
         </div>  
         </>
     )
