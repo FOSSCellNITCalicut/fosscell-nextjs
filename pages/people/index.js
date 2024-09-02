@@ -17,6 +17,7 @@ import Prithvi_G_Bhat from "@/public/images/Team/Prithvi_G_Bhat.jpg"
 import Vinit_Keshri from "@/public/images/Team/Vinit_Keshri.jpg"
 import Vivek from "@/public/images/Team/Vivek.jpg"
 import Arjith_Lal from "@/public/images/Team/Arjith_Lal.jpg"
+import Rehan from "@/public/images/Team/Rehan.jpg"
 
 // B21s
 import Afraz from "@/public/images/Team/Afraz Ahmed.jpeg"
@@ -296,6 +297,12 @@ const member = [
         name: "Akshay Raj P",
         position: "Member",
         image: AKSHAY_RAJ_P
+    },
+    {
+        id: 21,
+        name: "Rehan",
+        position: "Goated Member",
+        image: Rehan
     }
 ];
 
