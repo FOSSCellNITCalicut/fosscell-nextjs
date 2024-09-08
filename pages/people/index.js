@@ -297,13 +297,13 @@ const member = [
         name: "Akshay Raj P",
         position: "Member",
         image: AKSHAY_RAJ_P
-    },
-    {
-        id: 21,
-        name: "Rehan",
-        position: "Goated Member",
-        image: Rehan
     }
+    // {
+    //     id: 21,
+    //     name: "Rehan",
+    //     position: "Goated Member",
+    //     image: Rehan
+    // }
 ];
 
 export default function People() {
