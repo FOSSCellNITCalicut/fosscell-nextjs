@@ -43,9 +43,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     color: white;
+    width: 90%;
     transition: transform 0.5s ease-in;
-    /* border: 1px solid black; */
-    align-items: center;
+    /* border: 1px solid white; */
+    align-items:flex-start;
     padding: 2rem 0rem 2rem 0rem;
     margin-bottom: 2rem;
 }
