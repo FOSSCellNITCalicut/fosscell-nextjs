@@ -1,5 +1,6 @@
 import styles from '@/styles/Form.module.css'
 import axios from 'axios'
+import Script from 'next/script';
 import Link from 'next/link';
 import parse from 'html-react-parser'
 import { useState, useEffect } from 'react';
@@ -63,27 +64,28 @@ const prevPage = () => {
 }
 
     
-
-    return (
-        <>
-        <div className={styles['container']}>
-          <div className={styles['event-list']}>
-            <div className={styles['form-container']}>
-          {/* <iframe style="border:none;width:100%;" id="git-workshop-registration-qiojbl-1-1-1-2" src="https://opnform.com/forms/git-workshop-registration-qiojbl-1-1-1-2"></iframe><script type="text/javascript" onload="initEmbed('git-workshop-registration-qiojbl-1-1-1-2')" src="https://opnform.com/widgets/iframe.min.js"></script>  */}
+return (
+  <>
+    <div className={styles['container']}>
+      <div className={styles['event-list']}>
+        <div className={styles['form-container']}>
           <iframe
-  className={styles['form-frame']}
-  // style={{ border: "none", width: "100%", height: "100vh" }}
-  id="git-workshop-registration-qiojbl-1-1-1-2"
-  src="https://opnform.com/forms/git-workshop-registration-qiojbl-1-1-1-2"
-></iframe>
-<script
-  type="text/javascript"
-  onLoad="initEmbed('git-workshop-registration-qiojbl-1-1-1-2')"
-  src="https://opnform.com/widgets/iframe.min.js"
-></script>
-              </div>
+            className={styles['form-frame']}
+            id="git-workshop-registration-qiojbl-1-1-1-2"
+            src="https://opnform.com/forms/git-workshop-registration-qiojbl-1-1-1-2"
+          ></iframe>
+          <Script
+            src="https://opnform.com/widgets/iframe.min.js"
+            strategy="lazyOnload"
+            onLoad={() =>
+              typeof initEmbed === "function" &&
+              initEmbed("git-workshop-registration-qiojbl-1-1-1-2")
+            }
+          />
         </div>
-        </div>  
-        </>
-    )
+      </div>
+    </div>
+  </>
+);
+
     }
