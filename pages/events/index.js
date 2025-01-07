@@ -1,140 +1,145 @@
-import styles from '@/styles/Events.module.css'
-import axios from 'axios'
-import Link from 'next/link';
-import parse from 'html-react-parser'
-import { useState, useEffect } from 'react';
-import { useEventsPageContext } from '@/components/EventContext';
-import ClickHereSvg from '@/components/ClickhereSvg';
-
+import styles from "@/styles/Events.module.css";
+import axios from "axios";
+import Link from "next/link";
+import parse from "html-react-parser";
+import { useState, useEffect } from "react";
+import { useEventsPageContext } from "@/components/EventContext";
+import ClickHereSvg from "@/components/ClickhereSvg";
 
 export async function getServerSideProps() {
   return {
     props: {
-      site : process.env.SITE
-    }
-  }
+      site: process.env.SITE,
+    },
+  };
 }
 
-function ParseDate({date}) {
-    let formattedDate = new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: '2-digit',
+function ParseDate({ date }) {
+  let formattedDate = new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "2-digit",
     // hour: "2-digit",
     // minute: "2-digit",
     // hour12: false
-    })
-    return (
-    <p className={styles['event-card-date']}>
-        {formattedDate}
-    </p>
-    )
+  });
+  return <p className={styles["event-card-date"]}>{formattedDate}</p>;
 }
 
-export default function Events({site}) {
-    // const [loading, setLoading] = useState(true);
-    // const [newsData, setNewsData] = useState(null);
-    // const [pageNo, setPageNo] = useState(1);
-    // const [totalPages, setTotalPages] = useState(1);
-    const {newsData, setNewsData, loading, setLoading, pageNo, setPageNo, totalPages, setTotalPages} = useEventsPageContext();
-      
+export default function Events({ site }) {
+  // const [loading, setLoading] = useState(true);
+  // const [newsData, setNewsData] = useState(null);
+  // const [pageNo, setPageNo] = useState(1);
+  // const [totalPages, setTotalPages] = useState(1);
+  const {
+    newsData,
+    setNewsData,
+    loading,
+    setLoading,
+    pageNo,
+    setPageNo,
+    totalPages,
+    setTotalPages,
+  } = useEventsPageContext();
 
-useEffect(() => {
+  useEffect(() => {
     async function loadData() {
-        const ret = await axios.get(`https://public-api.wordpress.com/rest/v1.1/sites/${site}/posts/?number=6&page=${pageNo}`);
-        let response = await ret.data;
-        let data = await response.posts.slice(0, 6);
-        data =  await data.map((news) => {
-          return {
-            id : news.ID,
-            date : news.date,
-            title : news.title,
-            description : news.content,
-            image: news.featured_image
-          }
-        })
+      const ret = await axios.get(
+        `https://public-api.wordpress.com/rest/v1.1/sites/${site}/posts/?number=6&page=${pageNo}`
+      );
+      let response = await ret.data;
+      let data = await response.posts.slice(0, 6);
+      data = await data.map((news) => {
+        return {
+          id: news.ID,
+          date: news.date,
+          title: news.title,
+          description: news.content,
+          image: news.featured_image,
+        };
+      });
       setLoading(false);
       setNewsData(data.length === 0 ? null : data);
-      setTotalPages(parseInt((response.found + 5)/6));
+      setTotalPages(parseInt((response.found + 5) / 6));
     }
     loadData();
-}, [pageNo])
+  }, [pageNo]);
 
-
-
-const nextPage = () => {
-  if (pageNo < totalPages) {
-    setPageNo(pageNo + 1);
-    setLoading(true);
-    setNewsData(null);
-  }
-}
-
-const prevPage = () => {
-    if (pageNo > 1) {
-        setPageNo(pageNo - 1);
-        setLoading(true);
-        setNewsData(null);
+  const nextPage = () => {
+    if (pageNo < totalPages) {
+      setPageNo(pageNo + 1);
+      setLoading(true);
+      setNewsData(null);
     }
-}
+  };
 
-    
+  const prevPage = () => {
+    if (pageNo > 1) {
+      setPageNo(pageNo - 1);
+      setLoading(true);
+      setNewsData(null);
+    }
+  };
 
-    return (
-        <>
-        <div className={styles['container']}>
-          <div className={styles['event-list']}>
-                
-            {
-              loading && <div className={styles['loading-wrapper']}>
-                <div className={styles['loading-spinner']}></div>
-                </div>
-            }
-            { newsData && 
+  return (
+    <>
+      <div className={styles["container"]}>
+        <div className={styles["event-list"]}>
+          {loading && (
+            <div className={styles["loading-wrapper"]}>
+              <div className={styles["loading-spinner"]}></div>
+            </div>
+          )}
+          {newsData &&
+            newsData.map((news) => {
+              let ret = null;
+              if (news) {
+                ret = (
+                  <Link
+                    key={news.id}
+                    href={`/events/${news.id}`}
+                    passHref
+                    className={styles["event-card"]}
+                  >
+                    <img className={styles["image"]} src={`${news.image}`} />
 
-                ( 
-                    newsData.map((news) => {
-                      let ret = null
-                      if (news) {
-                        ret = (
-                      <Link
-                      key={news.id}
-                      href={`/events/${news.id}`}
-                      passHref
-                      className={styles['event-card']}
-                      >
-                            
-                            <img className={styles['image']} src={`${news.image}`}/>
-
-                        <div className={styles['contents']}>
-                          <ParseDate date={news.date} />
-                          <h3 className={styles['event-card-heading']}>
-                            {parse(news.title)}
-                          </h3>
-                          {/* <div className={styles['event-card-desc']}>
+                    <div className={styles["contents"]}>
+                      <ParseDate date={news.date} />
+                      <h3 className={styles["event-card-heading"]}>
+                        {parse(news.title)}
+                      </h3>
+                      {/* <div className={styles['event-card-desc']}>
                                 {parse(news.description)}
                               </div> */}
-                          <Link
-                            key={news.id}
-                            href={`/events/${news.id}`}
-                            passHref
-                          >
-                            <ClickHereSvg />
-                          </Link>
-                            </div>
+                      <Link key={news.id} href={`/events/${news.id}`} passHref>
+                        <ClickHereSvg />
                       </Link>
-                        )
-                      }
-                      return ret;
-                    })
-                 )
-            }
+                    </div>
+                  </Link>
+                );
+              }
+              return ret;
+            })}
         </div>
-          <div className={styles['nav-bar']}>
-              <button className={`${styles['button']} ${pageNo == 1 ? styles['button-inactive'] : ''}`} onClick={prevPage}>Prev</button>
-              <button className={`${styles['button']} ${pageNo === totalPages ? styles['button-inactive'] : ''}`} onClick={nextPage}>Next</button>
-          </div>
-        </div>  
-        </>
-    )
-    }
+        <div className={styles["nav-bar"]}>
+          <button
+            className={`${styles["button"]} ${
+              pageNo == 1 ? styles["button-inactive"] : ""
+            }`}
+            onClick={prevPage}
+          >
+            Prev
+          </button>
+          <button
+            className={`${styles["button"]} ${
+              pageNo === totalPages ? styles["button-inactive"] : ""
+            }`}
+            onClick={nextPage}
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </>
+  );
+}
