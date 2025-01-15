@@ -78,7 +78,7 @@ export default function Events({ site }) {
             <iframe
               className={styles["form-frame"]}
               id="git-workshop-registration-qiojbl-1-1-1-2"
-              src="https://opnform.com/forms/friday-night-foss-v2-wx6wlq-1"
+              src="https://opnform.com/forms/friday-night-foss-v2-wx6wlq-1-1"
             ></iframe>
             <Script
               src="https://opnform.com/widgets/iframe.min.js"
