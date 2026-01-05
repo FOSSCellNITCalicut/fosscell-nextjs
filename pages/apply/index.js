@@ -72,14 +72,14 @@ return (
           <iframe
             className={styles['form-frame']}
             id="git-workshop-registration-qiojbl-1-1-1-2"
-            src="https://opnform.com/forms/friday-night-foss-v2-wx6wlq-1"
+            src="https://opnform.com/forms/fosscell-induction-2025-26-usqz8v"
           ></iframe>
           <Script
             src="https://opnform.com/widgets/iframe.min.js"
             strategy="lazyOnload"
             onLoad={() =>
               typeof initEmbed === "function" &&
-              initEmbed("git-workshop-registration-qiojbl-1-1-1-2")
+              initEmbed("fosscell-induction-2025-26-usqz8v")
             }
           />
         </div>
