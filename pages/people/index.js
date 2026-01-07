@@ -3,6 +3,11 @@ import styles from '@/styles/People.module.css'
 
 // import Aabid from "@/public/images/Team/Aabid Mohamed.jpg"
 
+
+//B24s
+
+
+
 //B23s and B22s
 
 import Akhil from "@/public/images/Team/Akhil_T.jpg"
@@ -63,98 +68,192 @@ import Image from 'next/image'
 
 
 const alumni =[
+ {
+    id: 1,
+    name: "Mohammed Ameen",
+    position: "Alumni",
+    image: Ameen
+},
 {
-    id:0,
+    id: 2,
+    name: "Hemanth Chodisetti",
+    position: "Alumni",
+    image: Hemanth
+},
+{
+    id: 3,
+    name: "Adil",
+    position: "Alumni",
+    image: Adil
+},
+{
+    id: 4,
+    name: "Afraz Ahmed",
+    position: "Alumni ",
+    image: Afraz
+},
+{
+    id: 5,
+    name: "Vivek",
+    position: "Alumni",
+    image: Vivek
+},
+{
+    id: 6,
+    name: "Bhukya Chetan Ram",
+    position: "Alumni",
+    image: Bhukya
+},
+{
+    id: 7,
+    name: "Piyush Soni",
+    position: "Alumni",
+    image: Piyush
+},
+{
+    id: 8,
+    name: "Pranav Prashant",
+    position: "Alumni",
+    image: Pranav
+},
+{
+    id: 9,
+    name: "Pranav R Nair",
+    position: "Alumni",
+    image: PranavNair
+},
+{
+    id: 10,
+    name: "Vedasree Rodi",
+    position: "Alumni",
+    image: Vedasree
+},
+{
+    id: 11,
+    name: "Joel George John",
+    position: "Alumni",
+    image: JoelJohn
+},
+{
+    id: 12,
+    name: "Harshini Babu",
+    position: "Alumni",
+    image: Harshini_Babu
+},    
+
+{
+    id: 13,
+    name: "Jumana",
+    position: "Alumni",
+    image: Jumana
+},
+{
+    id: 14,
+    name: "Abhishek",
+    position: "Alumni",
+    image: Abhishek
+},
+
+{
+    id: 15,
+    name: "Akshay Raj P",
+    position: "Alumni",
+    image: AKSHAY_RAJ_P
+},
+
+
+{
+    id:16,
     name:"Mohamed Afthab",
     position:"Alumni",
     image:Afthab
 },
 {
-    id:1,
+    id:17,
     name:"Madhav Prabhu C M",
     position:"Alumni",
     image:Madhav
 },
 {
-    id:2,
+    id:18,
     name:"Vysakh Premkumar",
     position:"Alumni",
     image:Vysakh
 },
 {
-    id:3,
+    id:19,
     name:"Sreevalsan S",
     position:"Alumni",
     image:Sree
 },
 {
-    id:4,
+    id:20,
     name:"Neena M S",
     position:"Alumni",
     image:Neena
 },
 {
-    id:5,
+    id:21,
     name:"Alen Antony",
     position:"Alumni",
     image:Alen
 },
 {
-    id:6,
+    id:22,
     name:"Juby Johnson",
     position:"Alumni",
     image:Juby
 },
 {
-    id:7,
+    id:23,
     name:"Simmon Mathew Shaji",
     position:"Alumni",
     image:Simmon
 },
 {
-    id:8,
+    id:24,
     name:"Chacko James",
     position:"Alumni",
     image:Chacko
 },
 {
-    id:9,
+    id:25,
     name:"Abin Latheef",
     position:"Alumni",
     image:Abin
 },
 {
-    id:10,
+    id:26,
     name:"Aravind I M",
     position:"Alumni",
     image:Aravind
 },
 {
-    id:11,
+    id:27,
     name:"Arjun M Murali",
     position:"Alumni",
     image:Arjun
 },
 {
-    id:12,
+    id:28,
     name:"Cliford",
     position:"Alumni",
     image:Cliford
 },
 {
-    id:13,
+    id:29,
     name:"Hadif Yassin Hameed",
     position:"Alumni",
     image:Hadif
 },
 {
-    id:14,
+    id:30,
     name:"John D",
     position:"Alumni",
     image:John
 },
 {
-    id:15,
+    id:31,
     name: "Nithin Puthalath",
     position:"Alumni",
     image:Nithin
@@ -163,31 +262,22 @@ const alumni =[
 
 const member = [
     {
-        id: 0,
-        name: "Mohammed Ameen",
-        position: "Secretary",
-        image: Ameen
+    id: 1,
+    name: "Akhil",
+    position: "Secretary",
+    image: Akhil
     },
-    {
-        id: 1,
-        name: "Hemanth Chodisetti",
-        position: "Joint Secretary",
-        image: Hemanth
-    },
+
+
     {
         id: 2,
-        name: "Adil",
-        position: "Treasurer",
-        image: Adil
+        name: "Rehan",
+        position: "Goated Member",
+        image: Rehan
     },
+   
     {
         id: 3,
-        name: "Afraz Ahmed",
-        position: "Outreach Head",
-        image: Afraz
-    },
-    {
-        id: 4,
         name: "Vinit Keshri",
         position: "Content Head",
         image: Vinit_Keshri
@@ -205,24 +295,7 @@ const member = [
         position: "Design Head",
         image: arun_natarajan
     },
-    {
-        id: 7,
-        name: "Vivek",
-        position: "Marketing Head",
-        image: Vivek
-    },
-    {
-        id: 8,
-        name: "Joel George John",
-        position: "Media Head",
-        image: JoelJohn
-    },
-    {
-        id: 9,
-        name: "Harshini Babu",
-        position: "Event Coordinator",
-        image: Harshini_Babu
-    },
+ 
     {
         id: 10,
         name: "Prithvi G Bhat",
@@ -243,67 +316,9 @@ const member = [
     //     image:Unnati
     // },
     
-    {
-        id: 12,
-        name: "Bhukya Chetan Ram",
-        position: "Member",
-        image: Bhukya
-    },
-    {
-        id: 13,
-        name: "Piyush Soni",
-        position: "Member",
-        image: Piyush
-    },
-    {
-        id: 14,
-        name: "Pranav Prashant",
-        position: "Member",
-        image: Pranav
-    },
-    {
-        id: 15,
-        name: "Pranav R Nair",
-        position: "Member",
-        image: PranavNair
-    },
-    {
-        id: 16,
-        name: "Vedasree Rodi",
-        position: "Member",
-        image: Vedasree
-    },
-    {
-        id: 17,
-        name: "Akhil",
-        position: "Member",
-        image: Akhil
-    },
-    {
-        id: 18,
-        name: "Jumana",
-        position: "Member",
-        image: Jumana
-    },
-    {
-        id: 19,
-        name: "Abhishek",
-        position: "Member",
-        image: Abhishek
-    },
     
-    {
-        id: 20,
-        name: "Akshay Raj P",
-        position: "Member",
-        image: AKSHAY_RAJ_P
-    }
-    // {
-    //     id: 21,
-    //     name: "Rehan",
-    //     position: "Goated Member",
-    //     image: Rehan
-    // }
+    
+   
 ];
 
 export default function People() {
