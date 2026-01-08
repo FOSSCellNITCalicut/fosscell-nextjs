@@ -5,17 +5,31 @@ import styles from '@/styles/People.module.css'
 
 
 //B24s
+import Alfin from "@/public/images/Team/Alfin.jpg"
+import AmanTS from "public/images/Team/Aman_T_S.jpeg"
+
+import DevaVinod from "@/public/images/Team/Deva_Vinod.jpg"
+import EliasJoby from "@/public/images/Team/Elias_Joby.jpg"
+import IbinuJaleel from "@/public/images/Team/Ibinu_Jaleel.jpg"
+import JefinJoji from "@/public/images/Team/Jefin_Joji.jpg"
+import SharadChandra from "public/images/Team/Sharad_Chandra_M .jpg"
+import ShriramKiran from "@/public/images/Team/Shriram_Kiran.jpg"
+import Harshvardhan from "@/public/images/Team/Harsh.jpg"
+import AmilK from "public/images/Team/Amil_K.jpeg"
 
 
 
 //B23s and B22s
 
 import Akhil from "@/public/images/Team/Akhil_T.jpg"
+import AnirudhNambiar from "public/images/Team/Anirudh_Nambiar .jpg"
 import Jumana from "@/public/images/Team/Jumana.jpg"
 import Abhishek from "@/public/images/Team/Abhishek_Mohan_S.jpg"
 import Adil from "@/public/images/Team/Adil_Abdul_Jabbar.jpg"
 import AKSHAY_RAJ_P from "@/public/images/Team/AKSHAY_RAJ_P.jpg"
 import arun_natarajan from "@/public/images/Team/arun_natarajan.jpg"
+import Adithyan from "@/public/images/Team/Adithyan_V.jpg"
+import SahilMuhammed from "public/images/Team/Sahil_Muhammed.jpeg"
 import Harshini_Babu from "@/public/images/Team/Harshini_Babu.jpg"
 import noufal_rahim from "@/public/images/Team/noufal_rahim.jpg"
 import Prithvi_G_Bhat from "@/public/images/Team/Prithvi_G_Bhat.jpg"
@@ -23,6 +37,7 @@ import Vinit_Keshri from "@/public/images/Team/Vinit_Keshri.jpg"
 import Vivek from "@/public/images/Team/Vivek.jpg"
 import Arjith_Lal from "@/public/images/Team/Arjith_Lal.jpg"
 import Rehan from "@/public/images/Team/Rehan.jpg"
+
 
 // B21s
 import Afraz from "@/public/images/Team/Afraz Ahmed.jpeg"
@@ -62,6 +77,8 @@ import Vedasree from "@/public/images/Team/Vedasree Rodi.jpeg"
 import Vimal from "@/public/images/Team/Vimal Joseph.JPG"
 import Nazim from "@/public/images/Team/Nazim Jabir.jpeg"
 import Nithin from "@/public/images/Team/Nithin Manoj.jpeg"
+
+
 
 
 import Image from 'next/image'
@@ -140,6 +157,7 @@ const alumni =[
     position: "Alumni",
     image: Harshini_Babu
 },    
+
 
 {
     id: 13,
@@ -268,47 +286,149 @@ const member = [
     image: Akhil
     },
 
-
     {
         id: 2,
+        name: "Prithvi G Bhat",
+        position: "Joint Secretary",
+        image: Prithvi_G_Bhat
+    },
+
+    
+    {
+        id: 4,
+        name: "Arjith Lal",
+        position: "Treasurer",
+        image: Arjith_Lal
+    },
+
+
+    {
+        id: 5,
+        name: "Sahil Muhammed",
+        position: "Assistant Secretary",
+        image: SahilMuhammed
+    },
+
+    {
+        id: 3,
         name: "Rehan",
         position: "Goated Member",
         image: Rehan
     },
+
+
+    {
+        id: 6,
+        name: "Anirudh Nambiar",
+        position: "Workshop Lead",
+        image: AnirudhNambiar
+    },
+
+    {
+        id: 22,
+        name: "Harshvardhan",
+        position: "Linux Ambassador",
+        image: Harshvardhan
+    },
+
+
+
+    {
+    id: 23,
+    name: " Amil K",
+    position: "Marketting Head",
+    image: AmilK
+},
+
+
+
+    {
+        id: 7,
+        name: "Noufal Rahim",
+        position: "Outreach Head",
+        image: noufal_rahim
+    },
+
+      {
+        id: 8,
+        name: "Aman TS",
+        position: "Documentation Lead",
+        image: AmanTS
+    },
+
+
+      {
+        id: 9,
+        name: "Jefin Joji",
+        position: "Event Coordinator",
+        image: JefinJoji
+    },
    
     {
-        id: 3,
+        id: 10,
         name: "Vinit Keshri",
         position: "Content Head",
         image: Vinit_Keshri
     },
-    {
-        id: 5,
-        name: "Noufal Rahim",
-        position: "Tech Head",
-        image: noufal_rahim
-    },
+   
     
     {
-        id: 6,
+        id: 11,
         name: "Arun Natarajan",
         position: "Design Head",
         image: arun_natarajan
     },
  
-    {
-        id: 10,
-        name: "Prithvi G Bhat",
-        position: "Event Coordinator",
-        image: Prithvi_G_Bhat
-    },
+    
+    
     
     {
-        id: 11,
-        name: "Arjith Lal",
-        position: "Event Coordinator",
-        image: Arjith_Lal
+        id: 12,
+        name: "Adithyan V",
+        position: "Member",
+        image: Adithyan
     },
+    {
+        id: 13,
+        name: "Alfin",
+        position: "Member",
+        image: Alfin
+    },
+  
+    
+    {
+        id: 14,
+        name: "Deva Vinod",
+        position: "Member",
+        image: DevaVinod
+    },
+    {
+        id: 15,
+        name: "Elias Joby",
+        position: "Member",
+        image: EliasJoby
+    },
+    {
+        id: 16,
+        name: "Ibinu Jaleel",
+        position: "Member",
+        image: IbinuJaleel
+    },
+  
+    
+    {
+        id: 17,
+        name: "Sharad Chandra",
+        position: "Member",
+        image: SharadChandra
+    },
+    {
+        id: 18,
+        name: "Shriram Kiran",
+        position: "Member",
+        image: ShriramKiran
+    },
+    
     // {
     //     id:11,
     //     name:"Unnati",
