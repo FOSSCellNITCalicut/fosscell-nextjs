@@ -36,7 +36,7 @@ import FossmeetBanner from "../components/fossmeetBanner";
 export async function getServerSideProps() {
   return {
     props: {
-      //site : process.env.SITE
+      site : process.env.SITE
     }
   }
 }
