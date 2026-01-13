@@ -8,6 +8,8 @@ import axios from 'axios'
 import Link from 'next/link'
 import {IoMdClose} from "react-icons/io"
 import { useEventContext } from '@/components/EventContext'
+import FossmeetBanner from "../components/fossmeetBanner";
+
 
 // const inter = Inter({ subsets: ['latin'] });
 
@@ -48,42 +50,46 @@ export default function Home({site}) {
   }
 
   return (
-    <div className={styles['home']}>
-      <div className={styles['intro-container']}>
-          <div className={styles['intro-passage']}>
-              <h1 className={styles['intro-heading']}>
-                  Free Software Community of NITC.
-              </h1>
-              <p className={styles['intro-desc1']}>
-              FOSSCell is a technical club that promotes and strengthens the Free and Open Source Software ecosystem in NITC. 
-              </p>
-              <p className={styles['intro-desc2']}>
-              Join us and make a difference.
-              </p>
-          </div>  
-          <div
-            className={styles['intro-image']}
-            >
-                  <Image
-                      src={"/images/HeroImage.svg"}
-                      alt={"Hero Image"}
-                      layout="intrinsic"
-                      width={587}
-                      height={460}
-                      objectFit="scale-down" 
-                  />
-          </div>
+  <div className={styles['home']}>
+
+    <FossmeetBanner/>
+
+    <div className={styles['intro-container']}>
+      <div className={styles['intro-passage']}>
+        <h1 className={styles['intro-heading']}>
+          Free Software Community of NITC.
+        </h1>
+        <p className={styles['intro-desc1']}>
+          FOSSCell is a technical club that promotes and strengthens the Free and Open Source Software ecosystem in NITC.
+        </p>
+        <p className={styles['intro-desc2']}>
+          Join us and make a difference.
+        </p>
       </div>
-      <HomeEvents site={site}/>
-      <div className={`${styles['newsletter-p']} ${hid ? styles['hidden-news'] : " "}`}>
-        <p className={styles['newsletter-desc']}>Take a look at our FOSS-centric blog content  <a className={styles['newsletter-link']} href="https://newsletter.fosscell.org">here</a>!</p>
-        <div className={`${styles['newsletter-logo']} ${hid ? styles['hidden-news'] : ''}`}>
-        <IoMdClose
-          onClick={handleHidden}
-          size="20"
+      <div className={styles['intro-image']}>
+        <Image
+          src={"/images/HeroImage.svg"}
+          alt={"Hero Image"}
+          layout="intrinsic"
+          width={587}
+          height={460}
+          objectFit="scale-down"
         />
-        </div>
       </div>
-    </div> 
-  )
+    </div>
+
+    <HomeEvents site={site} />
+
+    <div className={`${styles['newsletter-p']} ${hid ? styles['hidden-news'] : " "}`}>
+      <p className={styles['newsletter-desc']}>
+        Take a look at our FOSS-centric blog content
+        <a className={styles['newsletter-link']} href="https://newsletter.fosscell.org"> here</a>!
+      </p>
+      <div className={`${styles['newsletter-logo']} ${hid ? styles['hidden-news'] : ''}`}>
+        <IoMdClose onClick={handleHidden} size="20" />
+      </div>
+    </div>
+  </div>
+);
+
 }
